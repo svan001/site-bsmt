@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd" >
+
+	<jee:jndi-lookup id="bootstrap_ds_id" jndi-name="jdbc/bootstrap_ds" />
+
+
+	<bean
+		class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor">
+		<property name="defaultPersistenceUnitName" value="bootstrap-pu" />
+	</bean>
+
+	<bean id="persistenceUnitManager"
+		class="org.springframework.orm.jpa.persistenceunit.DefaultPersistenceUnitManager">
+		<property name="persistenceXmlLocations">
+			<list>
+				<value>classpath*:META-INF/persist.xml</value>
+			</list>
+		</property>
+		<property name="dataSources">
+			<map>
+				<entry key="bootstrap-ds" value-ref="bootstrap_ds_id" />
+			</map>
+		</property>
+	</bean>
+
+	<bean name='hibernateJPAOnPostgresql'
+		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<property name="showSql" value="true" />
+		<property name="databasePlatform" value="org.hibernate.dialect.PostgreSQLDialect" />
+		<property name="generateDdl" value="true" />
+	</bean>
+
+</beans>
