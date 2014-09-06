@@ -1,4 +1,4 @@
-Ajouter ressource attomcat
+Ajouter ressource a tomcat
 
 <Resource auth="Container" 
 	driverClassName="org.postgresql.Driver" maxActive="20" maxIdle="10" maxWait="-1" 
