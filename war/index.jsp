@@ -87,24 +87,49 @@
     	<img alt="Banniere" src="assets/img/banniere.jpg"/>
     </div>
      -->
-	<div class="navbar banniere2">
-		<!-- <span class=>
-				
-			</span>
-			class="navbar-header"
-		 -->
-		<div> <img alt="Logo bsmt" src="img/logo.jpg" class="img-circle"/> <img alt="tof" height="230px" src="img/action_soldier.jpg"> <img alt="tof" height="230px" src="img/action_forest.jpg"> </div>
 
-		<nav class="navbar navbar-inverse" > <!-- navbar-fixed-top"> -->
+
+	<!-- header container -->
+	<div class="container">
+		<!-- IMG -->
+		<div class="row">
+
+			<div class="col-xs-3 col-md-3 col-lg-4 col-banniere">
+				<img alt="Logo bsmt" src="img/logo.jpg"
+					class="img-circle img-responsive img-banniere center-block" />
+			</div>
+			<div class="col-xs-4 col-md-4 col-banniere">
+				<img alt="tof" height="230px" src="img/action_soldier.jpg"
+					class="img-responsive img-banniere center-block">
+			</div>
+			<div class="col-xs-4 col-md-4 col-banniere">
+				<img alt="tof" height="230px" src="img/action_forest.jpg"
+					class="img-responsive img-banniere center-block">
+			</div>
+
+		</div>
+		<!-- Nav bar -->
+		<div class="row">
+			<nav class="navbar navbar-inverse">
+				<!-- navbar-fixed-top"> -->
 				<ul class="nav navbar-nav">
-				<li><a href="#"> </a></li>
-				<li class="active"><a href="#">La team</a></li>
-				<li><a href="#">Les membres</a></li>
-			</ul>
-
-		</nav>
+					<li><a href="#"> </a></li>
+					<li class="active"><a href="#">La team</a></li>
+					<li><a href="#">Les news</a></li>
+					<li><a href="#">Les membres</a></li>
+					<li><a href="#">La galerie</a></li>
+					<li><a href="#">Le forum</a></li>
+					
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li  class="recrutement-li" ><a href="#">RECRUTEMENT</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
-
+	<!-- END header container -->
+	
+	<!-- Main container -->	
 	<div class="container">
 
 		<div class="starter-template">
@@ -155,65 +180,6 @@
 				this document as a way to quickly start any new project.<br>
 				All you get is this text and a mostly barebones HTML document. Use
 				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document. Use
-				this document as a way to quickly start any new project.<br>
-				All you get is this text and a mostly barebones HTML document.
 			</p>
 		</div>
 
