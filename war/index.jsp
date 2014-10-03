@@ -118,7 +118,7 @@
 					<li><a href="#">Les news</a></li>
 					<li><a href="#">Les membres</a></li>
 					<li><a href="#">La galerie</a></li>
-					<li><a href="#">Le forum</a></li>
+					<li><a href="http://bsmt.forumactif.org/">Le forum</a></li>
 					
 				</ul>
 				<ul class="nav navbar-nav pull-right">
