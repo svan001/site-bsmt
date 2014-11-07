@@ -3,6 +3,8 @@
  */
 package com.svan.veilleTech.bootstrapMVC.dto.converter.impl;
 
+import org.springframework.stereotype.Component;
+
 import com.svan.fwk.dto.AbstractConverter;
 import com.svan.fwk.exception.NotImplementedYetException;
 import com.svan.veilleTech.bootstrapMVC.domain.Article;
@@ -13,6 +15,7 @@ import com.svan.veilleTech.bootstrapMVC.dto.converter.ArticleConverter;
  * @author stephane 3 sept. 2014
  *
  */
+@Component
 public class ArticleConverterImpl extends
 		AbstractConverter<Article, ArticleDTO> implements ArticleConverter {
 

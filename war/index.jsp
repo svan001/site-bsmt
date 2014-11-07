@@ -90,7 +90,7 @@
 
 
 	<!-- header container -->
-	<div class="container">
+	<div class="container top-container">
 		<!-- IMG -->
 		<div class="row">
 
@@ -109,7 +109,7 @@
 
 		</div>
 		<!-- Nav bar -->
-		<div class="row">
+		<div class="row navbar-row">
 			<nav class="navbar navbar-inverse">
 				<!-- navbar-fixed-top"> -->
 				<ul class="nav navbar-nav">

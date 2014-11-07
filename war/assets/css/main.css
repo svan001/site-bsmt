@@ -2,7 +2,8 @@ body {
 	background: black;
 	color: #5e5e5e;
 	padding-top: 2px;
-	
+	font-family: 'Open Sans', 'Droid Sans', arial, sans-serif;
+
 	/*width: 800px;
 	 margin-left: auto;
   margin-right: auto;
@@ -12,21 +13,32 @@ body {
 	*/
 }
 
-
 .starter-template {
-  padding: 40px 15px;
-  text-align: center;
+	padding: 40px 15px;
+	text-align: center;
 }
 
-.img-banniere{
+/* TOP CONTAINER*/
+.top-container {
+	margin-top: 10px;
+}
+/*Img de la banniere*/
+.img-banniere {
 	max-height: 250px;
 }
-
-.col-banniere{
+/*Colonne d'une row de la banniere*/
+.col-banniere {
 	padding: 2px;
 }
-
+/*class de la case recrutement*/
 .navbar-inverse .navbar-nav>li.recrutement-li>a {
-	color :white;
+	color: white;
 	font-weight: bold;
 }
+
+/*row de la navbar*/
+.navbar-row {
+	margin-top: 5px;
+	font-size: 16px;
+}
+/* END TOP CONTAINER*/

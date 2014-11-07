@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="index" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/main.jsp" />
+		<put-attribute name="navbar_selected_li" value="teamLi"
+			cascade="true" />
+	</definition>
+
+	<definition name="news" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/news/NewsList.jsp" />
+		<put-attribute name="navbar_selected_li" value="newsLi"
+			cascade="true" />
+	</definition>
+
+	<definition name="members" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/main.jsp" />
+		<put-attribute name="navbar_selected_li" value="membersLi"
+			cascade="true" />
+	</definition>
+
+	<definition name="galerie" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/main.jsp" />
+		<put-attribute name="navbar_selected_li" value="galerieLi"
+			cascade="true" />
+	</definition>
+
+
+	<definition name="recrutement" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/main.jsp" />
+		<put-attribute name="navbar_selected_li" value="recrutementLi"
+			cascade="true" />
+	</definition>
+
+
+</tiles-definitions>
