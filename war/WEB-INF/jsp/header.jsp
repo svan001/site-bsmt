@@ -4,6 +4,8 @@
 
 <tiles:importAttribute name="navbar_selected_li" toName="selectLi" scope="page"/>
 
+<link href="css/header.css" rel="stylesheet">
+
 <script>
 $(document).ready(function() {
 		// remove la class active partout la set au bon endroit

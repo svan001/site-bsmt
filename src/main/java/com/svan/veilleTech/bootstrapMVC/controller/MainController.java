@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.svan.veilleTech.bootstrapMVC.dto.NewsDTO;
+import com.svan.veilleTech.bootstrapMVC.dto.TeamMemberDTO;
 import com.svan.veilleTech.bootstrapMVC.service.NewsService;
+import com.svan.veilleTech.bootstrapMVC.service.TeamMemberService;
 
 /**
  * 
@@ -27,6 +29,9 @@ public class MainController {
 
 	@Autowired
 	private NewsService newsService;
+
+	@Autowired
+	private TeamMemberService teamMemberService;
 
 	@RequestMapping(value = "index")
 	public String index() {
@@ -46,6 +51,9 @@ public class MainController {
 	@RequestMapping(value = "members")
 	public ModelAndView members() {
 		ModelAndView mav = new ModelAndView("members");
+
+		List<TeamMemberDTO> teamMembers = teamMemberService.getAllMembers();
+		mav.addObject("teamMembers", teamMembers);
 
 		return mav;
 	}

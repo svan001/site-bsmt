@@ -17,7 +17,7 @@
 	</definition>
 
 	<definition name="members" extends="DefaultTemplate">
-		<put-attribute name="body" value="/WEB-INF/jsp/main.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/teamMember/TeamMembersList.jsp" />
 		<put-attribute name="navbar_selected_li" value="membersLi"
 			cascade="true" />
 	</definition>

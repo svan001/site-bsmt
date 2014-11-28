@@ -1,0 +1,25 @@
+/* TOP CONTAINER*/
+.top-container {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+/*Img de la banniere*/
+.img-banniere {
+	max-height: 250px;
+}
+/*Colonne d'une row de la banniere*/
+.col-banniere {
+	padding: 2px;
+}
+/*class de la case recrutement*/
+.navbar-inverse .navbar-nav>li.recrutement-li>a {
+	color: white;
+	font-weight: bold;
+}
+
+/*row de la navbar*/
+.navbar-row {
+	margin-top: 5px;
+	font-size: 16px;
+}
+/* END TOP CONTAINER*/

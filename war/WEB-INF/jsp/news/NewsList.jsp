@@ -11,10 +11,10 @@
 			<div class="col-xs-12 col-sm-8 col-lg-6">${news.title}</div>
 		</div>
 		<div class="row newsContent">
-			<div class="col-md-1 col-lg-1 hidden-xs hidden-sm">
+			<div class="hidden-xs hidden-sm col-md-1 col-lg-1">
 				<img src="img/new.png" class="img-responsive" />
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+			<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
 				<p>${news.content}</p>
 			</div>
 		</div>
