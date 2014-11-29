@@ -27,11 +27,22 @@
 		</property>
 	</bean>
 
+	<!-- 
 	<bean name='hibernateJPAOnPostgresql'
 		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
 		<property name="showSql" value="true" />
 		<property name="databasePlatform" value="org.hibernate.dialect.PostgreSQLDialect" />
 		<property name="generateDdl" value="true" />
 	</bean>
+ -->
+ 
+	<bean name='hibernateJPAOnMySql'
+		class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+		<property name="showSql" value="true" />
+		<property name="databasePlatform" value="org.hibernate.dialect.MySQL5Dialect" />
+		<property name="generateDdl" value="true" />
+	</bean>
+
+
 
 </beans>
