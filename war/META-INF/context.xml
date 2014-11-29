@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<context>
+<Context>
 	<ResourceLink name="jdbc/bootstrap_ds" global="jdbc/bootstrap_ds" />
-</context>
+</Context>
