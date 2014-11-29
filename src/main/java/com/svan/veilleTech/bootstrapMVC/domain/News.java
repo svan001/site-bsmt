@@ -28,7 +28,6 @@ import javax.persistence.TemporalType;
 						+  " ORDER BY n.creationDate DESC"
 			)
 })
-@SequenceGenerator(name = "news_id_generator", sequenceName = "NEWS_PK_SEQ", allocationSize = 1)
 public class News {
 	public static final String GET_LAST_NEWS = "GET_LAST_NEWS";
 	
@@ -37,7 +36,7 @@ public class News {
 
 	@Id
 	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "news_id_generator")
+	@GeneratedValue
 	private Long id;
 
 	// ------------ Columns-------------------------------------------------//

@@ -17,14 +17,13 @@ import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "team_member")
-@SequenceGenerator(name = "team_member_id_generator", sequenceName = "TEAM_MEMBER_PK_SEQ", allocationSize = 1)
 public class TeamMember {
 
 	// ------------ PK -----------------------------------------------------//
 
 	@Id
 	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "team_member_id_generator")
+	@GeneratedValue
 	private Long id;
 
 	// ------------ Columns-------------------------------------------------//

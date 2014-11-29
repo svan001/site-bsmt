@@ -15,14 +15,13 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity(name = "article")
-@SequenceGenerator(name = "article_id_generator", sequenceName = "ARTICLE_PK_SEQ", allocationSize = 1)
 public class Article {
 
 	// ------------ PK -----------------------------------------------------//
 
 	@Id
 	@Column(name = "id")
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "article_id_generator")
+	@GeneratedValue
 	private Long id;
 
 	// ------------ Columns-------------------------------------------------//
