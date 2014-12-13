@@ -12,9 +12,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.svan.veilleTech.bootstrapMVC.dto.NewsDTO;
 import com.svan.veilleTech.bootstrapMVC.dto.TeamMemberDTO;
-import com.svan.veilleTech.bootstrapMVC.service.NewsService;
 import com.svan.veilleTech.bootstrapMVC.service.TeamMemberService;
 
 /**
