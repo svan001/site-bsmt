@@ -11,7 +11,7 @@
 	</definition>
 
 	<definition name="news" extends="DefaultTemplate">
-		<put-attribute name="body" value="/WEB-INF/jsp/news/NewsList.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/news/ANewsList.jsp" />
 		<put-attribute name="navbar_selected_li" value="newsLi"
 			cascade="true" />
 	</definition>

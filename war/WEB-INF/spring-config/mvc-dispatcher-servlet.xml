@@ -46,6 +46,7 @@
     <!-- resources exclusions from servlet mapping -->
     <mvc:resources mapping="/jquery/**" location="/assets/jquery/"/>
     <mvc:resources mapping="/bootstrap/**" location="/assets/bootstrap/"/>
+    <mvc:resources mapping="/angular/**" location="/assets/angular/"/>
     <mvc:resources mapping="/css/**" location="/assets/css/"/>
     <mvc:resources mapping="/img/**" location="/assets/img/"/>
     <mvc:resources mapping="/profilePicture/**" location="/assets/img/member/"/>
