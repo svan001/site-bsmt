@@ -1,6 +1,8 @@
 
 <link href="css/news.css" rel="stylesheet">
 <script src="angular/angular.js"></script>
+<script src="angular/angular-resource.js"></script>
+
 <script src="js/newsListApp.js"></script>
 
 <div class="container" ng-app="newsListApp" ng-controller="newsListCtrl">
