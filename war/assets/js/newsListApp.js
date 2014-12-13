@@ -1,27 +1,23 @@
 'use strict';
 
+// Declare App
 var newsListApp = angular.module('newsListApp', [ 'newsListModule' ]);
 
-var newsListModule = angular.module('newsListModule', []);
+// Declare module 
+var newsListModule = angular.module('newsListModule', ['ngResource']);
 
-newsListModule.controller('newsListCtrl', [ '$scope',
+newsListModule.factory('newsService', ['$resource', function($resource) {
+	return $resource('http://localhost:8080/bootstrap-mvc/ajax/news');
+	}]
+);
 
-function($scope) {
+// Controller
+newsListModule.controller('newsListCtrl', [ '$scope', 'newsService',
 
-	var listNews = $scope.listNews = [ {
-		title : "Titre1",
-		content : "Cotnue blaeadeazdadz",
-		author : "Svan",
-		creationDate : "Hier"
+function($scope, newsService) {
 
-	}, {
-		title : "Titre2",
-		content : "Cotnue blaeadeazdadz",
-		author : "Svan2",
-		creationDate : "Avant hier"
-
-	} ];
-
+	var listNews = $scope.listNews = newsService.query();
+	
 	$scope.addNews = function() {
 
 		listNews.push({
@@ -30,7 +26,7 @@ function($scope) {
 			author : $scope.newAuthor,
 			creationDate : "Avant hier"
 		});
-	}
+	};
 }
 
 ]);
