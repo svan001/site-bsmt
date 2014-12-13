@@ -28,9 +28,6 @@ import com.svan.veilleTech.bootstrapMVC.service.TeamMemberService;
 public class MainController {
 
 	@Autowired
-	private NewsService newsService;
-
-	@Autowired
 	private TeamMemberService teamMemberService;
 
 	@RequestMapping(value = "index")
@@ -39,13 +36,8 @@ public class MainController {
 	}
 
 	@RequestMapping(value = "news")
-	public ModelAndView news() {
-		ModelAndView mav = new ModelAndView("news");
-
-		List<NewsDTO> news = newsService.getLastNews();
-		mav.addObject("listNews", news);
-
-		return mav;
+	public String news() {
+		return "news";
 	}
 
 	@RequestMapping(value = "members")
