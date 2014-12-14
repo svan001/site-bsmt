@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.svan.fwk.service.AbstractService;
 import com.svan.veilleTech.bootstrapMVC.dao.NewsDao;
+import com.svan.veilleTech.bootstrapMVC.domain.News;
 import com.svan.veilleTech.bootstrapMVC.dto.NewsDTO;
 import com.svan.veilleTech.bootstrapMVC.dto.converter.NewsConverter;
 import com.svan.veilleTech.bootstrapMVC.service.NewsService;
@@ -39,6 +40,19 @@ public class NewsServiceImpl extends AbstractService implements NewsService {
 	@Override
 	public List<NewsDTO> getLastNews() {
 		return converter.toDest(newsDao.getLastNews(DEFAULT_GET_LAST_NEWS_MAX_RESULT));
+	}
+
+	@Override
+	public NewsDTO addNews(NewsDTO newsDTO) {
+		News news = new News();
+
+		news.setTitle(newsDTO.getTitle());
+		news.setAuthor(newsDTO.getAuthor());
+		news.setContent(newsDTO.getContent());
+
+		newsDao.persist(news);
+
+		return converter.toDest(news);
 	}
 
 }

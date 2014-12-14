@@ -19,9 +19,17 @@ import com.svan.veilleTech.bootstrapMVC.dto.NewsDTO;
 public interface NewsService {
 
 	/**
-	 * Return the lasr news
+	 * Return the last news
 	 * 
 	 * @return
 	 */
 	public List<NewsDTO> getLastNews();
+
+	/**
+	 * Add a news
+	 * 
+	 * @param newsDTO
+	 * @return
+	 */
+	public NewsDTO addNews(NewsDTO newsDTO);
 }
