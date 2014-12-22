@@ -21,7 +21,7 @@ function($scope, News) {
 
 	// Ajout d'une news
 	$scope.addNews = function(formNews) {
-		// Add
+
 		News.save(formNews, function(addedNews) {
 			// maj scope
 			listNews.push(addedNews);
