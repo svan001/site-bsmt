@@ -39,7 +39,8 @@ public class NewsServiceImpl extends AbstractService implements NewsService {
 
 	@Override
 	public List<NewsDTO> getLastNews() {
-		return converter.toDest(newsDao.getLastNews(DEFAULT_GET_LAST_NEWS_MAX_RESULT));
+		return converter.toDest(newsDao
+				.getLastNews(DEFAULT_GET_LAST_NEWS_MAX_RESULT));
 	}
 
 	@Override
@@ -53,6 +54,11 @@ public class NewsServiceImpl extends AbstractService implements NewsService {
 		newsDao.persist(news);
 
 		return converter.toDest(news);
+	}
+
+	@Override
+	public NewsDTO getById(Long id) {
+		return converter.toDest(newsDao.findByPk(id));
 	}
 
 }

@@ -1,15 +1,16 @@
 /**
  * 2014
- * 13 déc. 2014 22:08:29 
+ * 13 dï¿½c. 2014 22:08:29 
  * @author stephane stephane.gronowski@gmail.com
  */
-package com.svan.veilleTech.bootstrapMVC.controller.ajax;
+package com.svan.veilleTech.bootstrapMVC.controller.api;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -19,13 +20,13 @@ import com.svan.veilleTech.bootstrapMVC.service.NewsService;
 
 /**
  * 
- * 13 déc. 2014 22:08:29
+ * 13 dï¿½c. 2014 22:08:29
  * 
  * @author stephane stephane.gronowski@gmail.com
  * 
  */
 @Controller
-@RequestMapping("ajax/news")
+@RequestMapping("api/news")
 public class NewsController {
 
 	@Autowired
@@ -33,19 +34,19 @@ public class NewsController {
 
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	@ResponseBody
-	public List<NewsDTO> getAllNews() {
+	public List<NewsDTO> getAll() {
 		return newsService.getLastNews();
 	}
 
-	@RequestMapping(value = "/{title}/{author}/{content}", method = RequestMethod.POST)
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	@ResponseBody
-	//public NewsDTO addNews(@RequestBody NewsDTO newsDTO) {
-	public NewsDTO addNews(@PathVariable String title, @PathVariable String author, @PathVariable String content ) {
-		NewsDTO newsDTO = new NewsDTO();
-		newsDTO.setTitle(title);
-		newsDTO.setAuthor(author);
-		newsDTO.setContent(content);
-		
+	public NewsDTO getById(@PathVariable Long id) {
+		return newsService.getById(id);
+	}
+
+	@RequestMapping(value = "", method = RequestMethod.POST)
+	@ResponseBody
+	public NewsDTO addNews(@RequestBody NewsDTO newsDTO) {
 		return newsService.addNews(newsDTO);
 	}
 

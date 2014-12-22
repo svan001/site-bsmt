@@ -26,11 +26,11 @@ $(document).ready(function() {
 				class="img-circle img-responsive img-banniere center-block" />
 		</div>
 		<div class="col-xs-4 col-md-4 col-banniere">
-			<img alt="tof" height="230px" src="img/action_soldier.jpg"
+			<img alt="tof" src="img/action_soldier.jpg"
 				class="img-responsive img-banniere center-block">
 		</div>
 		<div class="col-xs-4 col-md-4 col-banniere">
-			<img alt="tof" height="230px" src="img/action_forest.jpg"
+			<img alt="tof" src="img/action_forest.jpg"
 				class="img-responsive img-banniere center-block">
 		</div>
 
@@ -41,7 +41,7 @@ $(document).ready(function() {
 		<nav id="mainNavBar" class="navbar navbar-inverse">
 			<!-- navbar-fixed-top"> -->
 			<ul class="nav navbar-nav">
-				<li id="teamLi"><a href="<spring:url value="index.html"/>'">La team</a></li>
+				<li id="teamLi"><a href="<spring:url value="index.html"/>">La team</a></li>
 				<li id="newsLi"><a href="<spring:url value="/news.html"/>">Les news</a></li>
 				<li id="membersLi"><a href="<spring:url value="/members.html"/>">Les membres</a></li>
 				<li id="galerieLi"><a href="<spring:url value="/galerie.html"/>">La galerie</a></li>

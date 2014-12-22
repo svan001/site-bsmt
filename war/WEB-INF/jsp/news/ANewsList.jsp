@@ -1,9 +1,11 @@
 
 <link href="css/news.css" rel="stylesheet">
+
 <script src="angular/angular.js"></script>
 <script src="angular/angular-resource.js"></script>
 
-<script src="js/newsListApp.js"></script>
+
+<script src="app/news/newsListApp.js"></script>
 
 <div class="container" ng-app="newsListApp" ng-controller="newsListCtrl">
 	
@@ -29,10 +31,10 @@
 	</div>
 	
 	<p>Add</p>
-	<form ng-submit="addNews()">
-		<input placeholder="Title" ng-model="newTitle"/>
-		<input placeholder="Content" ng-model="newContent"/>
-		<input placeholder="Author" ng-model="newAuthor"/>
+	<form class="simple-form" ng-submit="addNews(formNews)">
+		<input placeholder="Title" ng-model="formNews.title"/>
+		<input placeholder="Content" ng-model="formNews.content"/>
+		<input placeholder="Author" ng-model="formNews.author"/>
 		<input type="submit"/>
 	</form>
 

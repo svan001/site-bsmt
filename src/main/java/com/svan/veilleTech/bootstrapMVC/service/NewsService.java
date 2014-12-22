@@ -26,6 +26,14 @@ public interface NewsService {
 	public List<NewsDTO> getLastNews();
 
 	/**
+	 * Return the news
+	 * 
+	 * @param id
+	 * @return the news or <code>null</code>
+	 */
+	public NewsDTO getById(Long id);
+
+	/**
 	 * Add a news
 	 * 
 	 * @param newsDTO
