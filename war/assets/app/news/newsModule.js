@@ -1,19 +1,19 @@
 'use strict';
 
 // Declare App
-var newsListApp = angular.module('newsListApp', [ 'newsListModule' ]);
+//var newsListApp = angular.module('newsListApp', [ 'newsListModule' ]);
 
 // Declare module
-var newsListModule = angular.module('newsListModule', [ 'ngResource' ]);
+var newsModule = angular.module('newsModule', [ 'ngResource' ]);
 
-newsListModule.factory('News', [ '$resource', function($resource) {
+newsModule.factory('News', [ '$resource', function($resource) {
 	return $resource('api/news/:id/', {
 		id : '@id'
 	});
 } ]);
 
 // Controller
-newsListModule.controller('newsListCtrl', [ '$scope', 'News',
+newsModule.controller('newsCtrl', [ '$scope', 'News',
 
 function($scope, News) {
 	// Init
