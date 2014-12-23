@@ -7,7 +7,8 @@ var navbarModule = angular.module('navbarModule', []);
 navbarModule.controller('navbarCtrl', [ '$scope',
 
 function($scope) {
-
+	$scope.selectedLi = 'home';
+	
 }// END CONTROLLER
 
 ]);
