@@ -1,0 +1,31 @@
+<link href="css/teamMember.css" rel="stylesheet">
+
+<div class="container teamMembersContainer">
+
+	<h1>
+		Les membre de la BSMT <small>(Selectionner un membre pour plus
+			d'infos)</small>
+	</h1>
+
+	<div class="row">
+		<div ng-repeat="teamMember in teamMembers"
+			class="col-lg-3 col-md-4 col-sm-6 col-xs-12 member">
+			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+				<img ng-src="profilePicture/mini/{{teamMember.nickName}}.jpg"
+					alt="Photo de {{teamMember.nickName}}"
+					class="img-rounded img-responsive" />
+			</div>
+			<div class="col-lg-6 col-sm-6 col-md-6  col-xs-6">
+				<blockquote>
+					<p class="text-capitalize">{{teamMember.nickName}}</p>
+					<small class="text-capitalize"><cite title="Role">{{teamMember.role}}
+					</cite></small>
+				</blockquote>
+
+			</div>
+		</div>
+
+	</div>
+
+
+</div>

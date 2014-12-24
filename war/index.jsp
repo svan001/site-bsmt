@@ -32,6 +32,7 @@
 	<script src="app/navbar/navbarModule.js"></script>
 	<script src="app/home/homeModule.js"></script>
 	<script src="app/news/newsModule.js"></script>
+	<script src="app/member/memberModule.js"></script>
 	<script src="app/recrutement/recrutementModule.js"></script>
 	<script src="app/app.js"></script>
 </head>
