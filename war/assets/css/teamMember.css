@@ -2,25 +2,6 @@
 	background-color: rgb(13,13,13);
 }
 
-.newsTitle {
-	color: rgb(161, 161, 161);
-	font-size: large;
-	font-weight : bold;
-	
-	border-top-style: solid;
-	border-top-color: white;
-	border-top-width: 1px;
-	
-	
-	padding-top: 10px;
-	padding-bottom: 10px;
-	}
-
-.newsContent {
-	color: #5e5e5e;
-	font-size: 16px;
-	}
-
 .profilName {
 	color: rgb(161, 161, 161);
 	text-align: center;
@@ -29,3 +10,5 @@
 	padding-bottom: 10px;
 		
 }
+
+
