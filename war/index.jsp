@@ -25,25 +25,30 @@
     <![endif]-->
 
 
-	<script src="angular/angular.js"></script>
-	<script src="angular/angular-resource.js"></script>
-	<script src="angular/angular-route.js"></script>
-	
-	<script src="app/navbar/navbarModule.js"></script>
-	<script src="app/home/homeModule.js"></script>
-	<script src="app/news/newsModule.js"></script>
-	<script src="app/member/memberModule.js"></script>
-	<script src="app/recrutement/recrutementModule.js"></script>
-	<script src="app/app.js"></script>
+<script src="angular/angular.js"></script>
+<script src="angular/angular-resource.js"></script>
+<script src="angular/angular-route.js"></script>
+
+<script src="app/navbar/navbarModule.js"></script>
+<script src="app/home/homeModule.js"></script>
+<script src="app/news/newsModule.js"></script>
+<script src="app/member/memberModule.js"></script>
+<script src="app/recrutement/recrutementModule.js"></script>
+<script src="app/app.js"></script>
 </head>
 <body ng-app="bsmtApp">
 
 	<!-- header container -->
-	<div ng-controller="navbarCtrl" ng-include="'app/navbar/navbar.html'"> </div>
+	<div ng-controller="navbarCtrl" ng-include="'app/navbar/navbar.html'">
+	</div>
 	<!-- END header container -->
 
 	<!-- VIEW -->
 	<div ng-view></div>
+
+	<footer class="text-center">
+		<p>COPYRIGHT BLACK SHARK MILSIM TEAM 2015</p>
+	</footer>
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->

@@ -9,20 +9,25 @@
 
 	<div class="row">
 		<div ng-repeat="teamMember in teamMembers"
-			class="col-lg-3 col-md-4 col-sm-6 col-xs-12 member">
+			class="col-lg-3 col-md-4 col-sm-6 col-xs-12 listColMember">
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-				<img ng-src="profilePicture/mini/{{teamMember.nickName}}.jpg"
+				<a href="#/member/{{teamMember.id}}"> <img
+					ng-src="profilePicture/mini/{{teamMember.nickName}}.jpg"
 					alt="Photo de {{teamMember.nickName}}"
 					class="img-rounded img-responsive" />
+				</a>
 			</div>
+
 			<div class="col-lg-6 col-sm-6 col-md-6  col-xs-6">
 				<blockquote>
-					<p class="text-capitalize">{{teamMember.nickName}}</p>
+					<p class="text-capitalize"
+						ng-class="teamMember.postulant ? 'postulantNickName' : 'memberNickName'">{{teamMember.nickName}}</p>
 					<small class="text-capitalize"><cite title="Role">{{teamMember.role}}
 					</cite></small>
 				</blockquote>
 
 			</div>
+
 		</div>
 
 	</div>

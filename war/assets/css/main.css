@@ -2,6 +2,7 @@ body {
 	background: black;
 	color: #5e5e5e;
 	padding-top: 2px;
+	padding-bottom: 50px;
 	font-family: 'Open Sans', 'Droid Sans', arial, sans-serif;
 
 	/*width: 800px;
@@ -16,4 +17,19 @@ body {
 .starter-template {
 	padding: 40px 15px;
 	text-align: center;
+}
+
+
+footer {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: #5e5e5e;
+	
+	font-weight: bold; margin : 0 auto;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: -15;
+	margin: 0 auto;
 }

@@ -25,4 +25,11 @@ public interface TeamMemberService {
 	 */
 	public List<TeamMemberDTO> getAllMembers();
 
+	/**
+	 * Return the member by id
+	 * 
+	 * @param id
+	 * @return
+	 */
+	public TeamMemberDTO getById(Long id);
 }

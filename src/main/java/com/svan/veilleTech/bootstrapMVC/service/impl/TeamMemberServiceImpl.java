@@ -39,4 +39,9 @@ public class TeamMemberServiceImpl extends AbstractService implements TeamMember
 		return converter.toDest(teamMemberDao.findAll());
 	}
 
+	@Override
+	public TeamMemberDTO getById(Long id) {
+		return converter.toDest(teamMemberDao.findByPk(id));
+	}
+
 }

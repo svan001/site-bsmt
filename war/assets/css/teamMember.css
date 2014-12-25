@@ -1,17 +1,26 @@
-.teamMembersContainer{
-	background-color: rgb(13,13,13);
+.teamMembersContainer {
+	background-color: rgb(13, 13, 13);
 }
 
 .profilName {
 	color: rgb(161, 161, 161);
 	text-align: center;
-	
 	padding-top: 10px;
 	padding-bottom: 10px;
-		
 }
 
+.listColMember {
+	margin-top: 20px;
+}
 
-.member{
-	margin-top : 20px;
+.memberNickName {
+	color: #F50C0C;
+}
+
+.postulantNickName {
+	color: #21EBEB
+}
+
+.memberDl{
+ vertical-align: middle;	
 }
