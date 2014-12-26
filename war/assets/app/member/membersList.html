@@ -21,7 +21,7 @@
 			<div class="col-lg-6 col-sm-6 col-md-6  col-xs-6">
 				<blockquote>
 					<p class="text-capitalize"
-						ng-class="teamMember.postulant ? 'postulantNickName' : 'memberNickName'">{{teamMember.nickName}}</p>
+						ng-class="{'postulantNickName' : teamMember.status == 'P', 'memberNickName' : teamMember.status == 'M', 'leaderNickName' : teamMember.status == 'L'}">{{teamMember.nickName}}</p>
 					<small class="text-capitalize"><cite title="Role">{{teamMember.role}}
 					</cite></small>
 				</blockquote>

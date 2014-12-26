@@ -26,6 +26,18 @@ public class TeamMember {
 
 	// ------------ Columns-------------------------------------------------//
 
+	// Person
+	@Column(name = "forname", nullable = false, length = 255)
+	private String forname;
+
+	@Column(name = "sexe", nullable = false, length = 1)
+	private String sexe;
+
+	@Column(name = "birth_date", nullable = false)
+	@Temporal(TemporalType.TIMESTAMP)
+	private Calendar birthDate;
+
+	// Member
 	@Column(name = "nick_name", nullable = false, length = 255)
 	private String nickName;
 
@@ -38,8 +50,18 @@ public class TeamMember {
 	@Column(name = "description", nullable = false, length = 5000)
 	private String description;
 
-	@Column(name = "is_postulant", nullable = false)
-	private boolean postulant;
+	@Column(name = "status", nullable = false, length = 1)
+	private String status;
+
+	@Column(name = "membership_date", nullable = false)
+	@Temporal(TemporalType.TIMESTAMP)
+	private Calendar membershipDate;
+
+	@Column(name = "likes", nullable = false, length = 255)
+	private String likes;
+
+	@Column(name = "doesntlikes", nullable = false, length = 255)
+	private String doesntlikes;
 
 	// ------------ Creation/update -----------------------------------------//
 
@@ -122,12 +144,60 @@ public class TeamMember {
 		this.role = role;
 	}
 
-	public boolean isPostulant() {
-		return postulant;
+	public String getStatus() {
+		return status;
 	}
 
-	public void setPostulant(boolean postulant) {
-		this.postulant = postulant;
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getForname() {
+		return forname;
+	}
+
+	public void setForname(String forname) {
+		this.forname = forname;
+	}
+
+	public Calendar getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(Calendar birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public Calendar getMembershipDate() {
+		return membershipDate;
+	}
+
+	public void setMembershipDate(Calendar membershipDate) {
+		this.membershipDate = membershipDate;
+	}
+
+	public String getSexe() {
+		return sexe;
+	}
+
+	public void setSexe(String sexe) {
+		this.sexe = sexe;
+	}
+
+	public String getLikes() {
+		return likes;
+	}
+
+	public void setLikes(String likes) {
+		this.likes = likes;
+	}
+
+	public String getDoesntlikes() {
+		return doesntlikes;
+	}
+
+	public void setDoesntlikes(String doesntlikes) {
+		this.doesntlikes = doesntlikes;
 	}
 
 }

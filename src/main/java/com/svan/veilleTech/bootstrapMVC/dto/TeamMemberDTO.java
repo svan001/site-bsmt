@@ -10,6 +10,14 @@ public class TeamMemberDTO {
 
 	// ------------ Columns-------------------------------------------------//
 
+	// Person
+	private String forname;
+
+	private String sexe;
+
+	private Calendar birthDate;
+
+	// Member
 	private String nickName;
 
 	private String gear;
@@ -18,7 +26,13 @@ public class TeamMemberDTO {
 
 	private String description;
 
-	private boolean postulant;
+	private String status;
+
+	private Calendar membershipDate;
+
+	private String likes;
+
+	private String doesntlikes;
 
 	// ------------ Creation/update -----------------------------------------//
 
@@ -87,12 +101,60 @@ public class TeamMemberDTO {
 		this.role = role;
 	}
 
-	public boolean isPostulant() {
-		return postulant;
+	public String getForname() {
+		return forname;
 	}
 
-	public void setPostulant(boolean postulant) {
-		this.postulant = postulant;
+	public void setForname(String forname) {
+		this.forname = forname;
+	}
+
+	public String getSexe() {
+		return sexe;
+	}
+
+	public void setSexe(String sexe) {
+		this.sexe = sexe;
+	}
+
+	public Calendar getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(Calendar birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public Calendar getMembershipDate() {
+		return membershipDate;
+	}
+
+	public void setMembershipDate(Calendar membershipDate) {
+		this.membershipDate = membershipDate;
+	}
+
+	public String getLikes() {
+		return likes;
+	}
+
+	public void setLikes(String likes) {
+		this.likes = likes;
+	}
+
+	public String getDoesntlikes() {
+		return doesntlikes;
+	}
+
+	public void setDoesntlikes(String doesntlikes) {
+		this.doesntlikes = doesntlikes;
 	}
 
 }

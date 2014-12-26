@@ -13,6 +13,10 @@
 	margin-top: 20px;
 }
 
+.leaderNickName {
+	color: #1109F0;
+}
+
 .memberNickName {
 	color: #F50C0C;
 }
@@ -23,4 +27,8 @@
 
 .memberDl{
  vertical-align: middle;	
+}
+
+.retourButton{
+	font-size: 30px;
 }
