@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare App
-var bsmtApp = angular.module('bsmtApp', [ 'ngRoute', 'navbarModule',
+var bsmtApp = angular.module('bsmtApp', [ 'ngRoute', 'ngAnimate', 'navbarModule',
 		'homeModule', 'newsModule', 'memberModule', 'recrutementModule' ]);
 
 // CONFIG ROUTE

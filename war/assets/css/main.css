@@ -4,14 +4,6 @@ body {
 	padding-top: 2px;
 	padding-bottom: 50px;
 	font-family: 'Open Sans', 'Droid Sans', arial, sans-serif;
-
-	/*width: 800px;
-	 margin-left: auto;
-  margin-right: auto;
-	/*margin: auto;
-	padding-left : 300px;
-	padding-right : 300px;
-	*/
 }
 
 .starter-template {
@@ -31,4 +23,37 @@ footer {
 	bottom: 0px;
 	background: black;
 	margin: 0 auto;
+}
+
+.view-animate-container {
+	position: relative;
+}
+
+.slide {
+	top: 0px;
+	position: absolute;
+	width: 100%;
+}
+
+.slide.ng-enter,.slide.ng-leave {
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.slide.ng-enter {
+	left: 100%;
+}
+
+.slide.ng-enter-active {
+	left: 0;
+}
+
+.slide.ng-leave {
+	left: 0;
+}
+
+.slide.ng-leave-active {
+	left: -200%;
 }

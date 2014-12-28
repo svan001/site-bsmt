@@ -28,6 +28,7 @@
 <script src="angular/angular.js"></script>
 <script src="angular/angular-resource.js"></script>
 <script src="angular/angular-route.js"></script>
+<script src="angular/angular-animate.js"></script>
 
 <script src="app/navbar/navbarModule.js"></script>
 <script src="app/home/homeModule.js"></script>
@@ -44,8 +45,10 @@
 	<!-- END header container -->
 
 	<!-- VIEW -->
-	<div ng-view></div>
-
+	<div class="view-animate-container container">
+		<div ng-view class="slide"></div>
+	</div>
+	
 	<footer class="text-center">
 		<p>COPYRIGHT BLACK SHARK MILSIM TEAM 2015</p>
 	</footer>

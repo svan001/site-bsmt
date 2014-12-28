@@ -33,3 +33,23 @@
 .retourButton{
 	font-size: 30px;
 }
+
+
+.listColMember.ng-enter {
+  -webkit-transition: 5s linear all;
+  -moz-transition: 5s linear all;
+  -o-transition: 5s linear all;
+  transition: 5s linear all;
+}
+
+.listColMember.ng-enter{
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.listColMember.ng-enter.ng-enter-active {
+  opacity: 1;
+  height: 120px;
+}
+
