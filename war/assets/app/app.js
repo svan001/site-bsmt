@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare App
-var bsmtApp = angular.module('bsmtApp', [ 'ngRoute', 'ngAnimate', 'myRouteModule', 'navbarModule',
+var bsmtApp = angular.module('bsmtApp', [ 'ngRoute', 'ngAnimate', 'navbarModule',
 		'homeModule', 'newsModule', 'memberModule', 'recrutementModule' ]);
 
 // CONFIG ROUTE
@@ -28,3 +28,15 @@ bsmtApp.config([ '$routeProvider', function($routeProvider) {
 
 	;
 } ]);
+
+// block run pour gestion des animation entre route
+bsmtApp.run(function($location, $rootScope) {
+	$rootScope.$on('$routeChangeStart', function() {
+		$rootScope.test = /^\/member\/[0-9]*$/.test($location.path());
+		if (/^\/member\/[0-9]*$/.test($location.path())) {
+			$rootScope.viewAnimationStyle = 'slide';
+		} else {
+			$rootScope.viewAnimationStyle = 'none';
+		}
+	});
+});

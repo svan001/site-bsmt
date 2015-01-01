@@ -30,7 +30,6 @@
 <script src="angular/angular-route.js"></script>
 <script src="angular/angular-animate.js"></script>
 
-<script src="app/route/myRoute.js"></script>
 <script src="app/navbar/navbarModule.js"></script>
 <script src="app/home/homeModule.js"></script>
 <script src="app/news/newsModule.js"></script>
