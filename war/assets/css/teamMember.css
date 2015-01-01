@@ -36,10 +36,10 @@
 
 
 .listColMember.ng-enter {
-  -webkit-transition: 5s linear all;
-  -moz-transition: 5s linear all;
-  -o-transition: 5s linear all;
-  transition: 5s linear all;
+  -webkit-transition: 1s linear all;
+  -moz-transition: 1s linear all;
+  -o-transition: 1s linear all;
+  transition: 1s linear all;
 }
 
 .listColMember.ng-enter{

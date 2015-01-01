@@ -36,10 +36,10 @@ footer {
 }
 
 .slide.ng-enter,.slide.ng-leave {
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
 }
 
 .slide.ng-enter {
@@ -55,5 +55,5 @@ footer {
 }
 
 .slide.ng-leave-active {
-	left: -200%;
+	left: 200%;
 }

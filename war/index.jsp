@@ -30,6 +30,7 @@
 <script src="angular/angular-route.js"></script>
 <script src="angular/angular-animate.js"></script>
 
+<script src="app/route/myRoute.js"></script>
 <script src="app/navbar/navbarModule.js"></script>
 <script src="app/home/homeModule.js"></script>
 <script src="app/news/newsModule.js"></script>
@@ -46,7 +47,7 @@
 
 	<!-- VIEW -->
 	<div class="view-animate-container container">
-		<div ng-view class="slide"></div>
+		<div ng-view ng-class="viewAnimationStyle"></div>
 	</div>
 	
 	<footer class="text-center">
