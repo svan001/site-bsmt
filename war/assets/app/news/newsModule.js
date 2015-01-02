@@ -1,8 +1,5 @@
 'use strict';
 
-// Declare App
-//var newsListApp = angular.module('newsListApp', [ 'newsListModule' ]);
-
 // Declare module
 var newsModule = angular.module('newsModule', [ 'ngResource' ]);
 
