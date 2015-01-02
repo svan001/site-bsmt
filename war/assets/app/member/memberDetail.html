@@ -1,15 +1,17 @@
 <link href="css/teamMember.css" rel="stylesheet">
 
-<div class="teamMembersContainer">
+<div class="teamMemberDetailContainer">
 
-	<h2 class="text-capitalize"
-		ng-class="{'postulantNickName' : teamMember.status == 'P', 'memberNickName' : teamMember.status == 'M', 'leaderNickName' : teamMember.status == 'L'}">
+	<div class="row">
+		<h2 class="text-capitalize"
+			ng-class="{'postulantNickName' : teamMember.status == 'P', 'memberNickName' : teamMember.status == 'M', 'leaderNickName' : teamMember.status == 'L'}">
 
-		<a href="#/member" class="btn btn-link"> <span
-			class="retourButton glyphicon glyphicon glyphicon-circle-arrow-left"
-			aria-hidden="true"></span>
-		</a> {{teamMember.nickName}}
-	</h2>
+			<a href="#/member" class="btn btn-link"> <span
+				class="retourButton glyphicon glyphicon glyphicon-circle-arrow-left"
+				aria-hidden="true"></span>
+			</a> {{teamMember.nickName}}
+		</h2>
+	</div>
 
 	<div class="row">
 		<div class="col-lg-6 col-sm-6 col-md-6  col-xs-6 memberDl">
