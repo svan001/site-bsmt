@@ -25,3 +25,11 @@ values ('svan', 'Stephane', 'M', 'Operateur', '1988-10-18', 'Operateur de la tea
 -- Gallery
 
 insert into gallery (title, creation_date) values ('Les Membres', '2015-01-01');
+
+
+-- Picture
+insert into picture (gallery, title, creation_date) values (1, 'soldier', '2015-01-01');
+insert into picture (gallery, title, creation_date) values (1, 'macdo', '2015-01-01');
+insert into picture (gallery, title, creation_date) values (1, 'forest', '2015-01-01');
+insert into picture (gallery, title, creation_date) values (1, 'scarface', '2015-01-01');
+insert into picture (gallery, title, creation_date) values (1, 'svan', '2015-01-01');
