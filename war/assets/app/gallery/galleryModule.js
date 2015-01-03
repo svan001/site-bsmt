@@ -28,7 +28,12 @@ galleryModule.controller('showGalleryCtrl', [ '$scope', '$routeParams',
 				id : $routeParams.idGallery
 			});
 
+			$scope.pictureToShow = null;
+			
 			// Service
+			$scope.showPicture = function(picture){
+				$scope.pictureToShow = picture;
+			};
 			// END Service
 		} // END CONTROLLER
 ]);
