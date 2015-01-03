@@ -23,7 +23,11 @@
 }
 
 .postulantNickName {
-	color: #21EBEB
+	color: #21EBEB;
+}
+
+.veteranNickName {
+	color: #25CC2A;
 }
 /*END Couleur des pseudos*/
 .profilName {

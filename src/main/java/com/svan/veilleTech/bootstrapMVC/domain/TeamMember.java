@@ -57,6 +57,10 @@ public class TeamMember {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Calendar membershipDate;
 
+	@Column(name = "departure_date")
+	@Temporal(TemporalType.TIMESTAMP)
+	private Calendar departureDate;
+
 	@Column(name = "likes", nullable = false, length = 255)
 	private String likes;
 
@@ -198,6 +202,14 @@ public class TeamMember {
 
 	public void setDoesntlikes(String doesntlikes) {
 		this.doesntlikes = doesntlikes;
+	}
+
+	public Calendar getDepartureDate() {
+		return departureDate;
+	}
+
+	public void setDepartureDate(Calendar departureDate) {
+		this.departureDate = departureDate;
 	}
 
 }

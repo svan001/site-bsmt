@@ -37,6 +37,7 @@ public class TeamMemberConverterImpl extends AbstractConverter<TeamMember, TeamM
 		dto.setForname(entity.getForname());
 		dto.setLikes(entity.getLikes());
 		dto.setMembershipDate(entity.getMembershipDate());
+		dto.setDepartureDate(entity.getDepartureDate());
 		dto.setSexe(entity.getSexe());
 		dto.setStatus(entity.getStatus());
 
@@ -45,5 +46,4 @@ public class TeamMemberConverterImpl extends AbstractConverter<TeamMember, TeamM
 
 		return dto;
 	}
-
 }

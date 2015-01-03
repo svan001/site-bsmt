@@ -4,12 +4,13 @@
 
 	<div class="row">
 		<h2 class="text-capitalize"
-			ng-class="{'postulantNickName' : teamMember.status == 'P', 'memberNickName' : teamMember.status == 'M', 'leaderNickName' : teamMember.status == 'L'}">
+			ng-class="{'postulantNickName' : teamMember.status == 'P', 'memberNickName' : teamMember.status == 'M', 'leaderNickName' : teamMember.status == 'L', 'veteranNickName' : teamMember.status == 'V'}">
 
 			<a href="#/member" class="btn btn-link"> <span
 				class="retourButton glyphicon glyphicon glyphicon-circle-arrow-left"
 				aria-hidden="true"></span>
-			</a> {{teamMember.nickName}}
+			</a> {{teamMember.nickName}} <span ng-if="teamMember.status == 'V'">(Depart
+				{{teamMember.departureDate | date:'dd/MM/yyyy'}})</span>
 		</h2>
 	</div>
 
@@ -21,7 +22,7 @@
 					<dd ng-switch-when="M">Membre</dd>
 					<dd ng-switch-when="L">Leader</dd>
 					<dd ng-switch-when="P">Postulant</dd>
-
+					<dd ng-switch-when="V">Veteran</dd>
 				</div>
 
 				<dt>Prenom</dt>

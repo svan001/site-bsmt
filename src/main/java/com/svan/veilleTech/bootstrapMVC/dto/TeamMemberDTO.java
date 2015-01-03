@@ -30,6 +30,8 @@ public class TeamMemberDTO {
 
 	private Calendar membershipDate;
 
+	private Calendar departureDate;
+
 	private String likes;
 
 	private String doesntlikes;
@@ -155,6 +157,14 @@ public class TeamMemberDTO {
 
 	public void setDoesntlikes(String doesntlikes) {
 		this.doesntlikes = doesntlikes;
+	}
+
+	public Calendar getDepartureDate() {
+		return departureDate;
+	}
+
+	public void setDepartureDate(Calendar departureDate) {
+		this.departureDate = departureDate;
 	}
 
 }
