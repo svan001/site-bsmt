@@ -1,8 +1,9 @@
 'use strict';
 
 // Declare App
-var bsmtApp = angular.module('bsmtApp', [ 'ngRoute', 'ngAnimate', 'navbarModule',
-		'homeModule', 'newsModule', 'memberModule', 'recrutementModule', 'galleryModule' ]);
+var bsmtApp = angular.module('bsmtApp', [ 'ngRoute', 'ngAnimate',
+		'navbarModule', 'homeModule', 'newsModule', 'memberModule',
+		'recrutementModule', 'galleryModule' ]);
 
 // CONFIG ROUTE
 bsmtApp.config([ '$routeProvider', function($routeProvider) {
@@ -25,6 +26,9 @@ bsmtApp.config([ '$routeProvider', function($routeProvider) {
 	}).when('/gallery', {
 		templateUrl : 'app/gallery/galleryList.html',
 		controller : 'galleryCtrl'
+	}).when('/gallery/:idGallery', {
+		templateUrl : 'app/gallery/showGallery.html',
+		controller : 'showGalleryCtrl'
 	}).otherwise({
 		redirectTo : '/home'
 	})
@@ -35,7 +39,8 @@ bsmtApp.config([ '$routeProvider', function($routeProvider) {
 // block run pour gestion des animation entre route
 bsmtApp.run(function($location, $rootScope) {
 	$rootScope.$on('$routeChangeStart', function() {
-		if (/^\/member\/[0-9]*$/.test($location.path())) {
+		if (/^\/member\/[0-9]*$/.test($location.path())
+				|| /^\/gallery\/[0-9]*$/.test($location.path())) {
 			$rootScope.viewAnimationStyle = 'slide';
 		} else {
 			$rootScope.viewAnimationStyle = 'none';

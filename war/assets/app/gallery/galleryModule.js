@@ -19,3 +19,16 @@ galleryModule.controller('galleryCtrl', [ '$scope', 'Gallery',
 			// END Service
 		} // END CONTROLLER
 ]);
+
+// Controller Show gallery
+galleryModule.controller('showGalleryCtrl', [ '$scope', '$routeParams',
+		'Gallery', function($scope, $routeParams, Gallery) {
+
+			var gallery = $scope.gallery = Gallery.get({
+				id : $routeParams.idGallery
+			});
+
+			// Service
+			// END Service
+		} // END CONTROLLER
+]);
