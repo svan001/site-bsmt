@@ -10,6 +10,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
@@ -19,7 +20,7 @@ import javax.persistence.TemporalType;
 
 /**
  * @author stephane 3 janv. 2015
- *
+ * 
  */
 @Entity
 @Table(name = "picture")
@@ -35,7 +36,8 @@ public class Picture {
 	@Column(name = "title", nullable = false, length = 255)
 	private String title;
 
-	@ManyToOne
+	@ManyToOne()
+	@JoinColumn(name = "gallery", nullable = false)
 	private Gallery gallery;
 
 	// ------------ Creation/update -----------------------------------------//
@@ -102,6 +104,14 @@ public class Picture {
 	 */
 	public Calendar getUpdateDate() {
 		return updateDate;
+	}
+
+	public Gallery getGallery() {
+		return gallery;
+	}
+
+	public void setGallery(Gallery gallery) {
+		this.gallery = gallery;
 	}
 
 }
