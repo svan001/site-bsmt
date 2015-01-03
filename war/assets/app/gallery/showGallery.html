@@ -1,11 +1,11 @@
 <link href="css/gallery.css" rel="stylesheet">
 
 
-<div class="galleryModal center-block" ng-show="pictureToShow != null"
+<div class="galleryModal" ng-show="pictureToShow != null"
 	ng-click="pictureToShow = null">
-	<div class="center-block">
-		<img ng-src="img/gallery/{{gallery.id}}/{{pictureToShow.name}}.jpg"
-			alt="Gallery{{gallery.id}}" class="img-responsive" />
+	<div class="modal-dialog galleryModal-dialog">
+		<img ng-src="img/gallery/{{gallery.id}}/{{pictureToShow.title}}.jpg"
+			alt="Gallery{{gallery.id}}" class="img-responsive galleryModal-img" />
 	</div>
 </div>
 
@@ -20,11 +20,11 @@
 		</h2>
 	</div>
 	<div class="row">
-		<div ng-repeat="picture in [{name : 'forest'}, {name : 'macdo'},{name : 'forest'}, {name : 'macdo'},{name : 'forest'}, {name : 'macdo'},{name : 'forest'}, {name : 'macdo'},{name : 'forest'}, {name : 'macdo'}]"
+		<div ng-repeat="picture in gallery.pictures"
 			class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
 
 			<img ng-click="showPicture(picture)"
-				ng-src="img/gallery/{{gallery.id}}/{{picture.name}}.jpg"
+				ng-src="img/gallery/{{gallery.id}}/{{picture.title}}.jpg"
 				alt="Gallery{{gallery.id}}" class="img-responsive" />
 		</div>
 	</div>

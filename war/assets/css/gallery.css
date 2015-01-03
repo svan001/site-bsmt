@@ -5,7 +5,6 @@
 
 .showGalleryContainer {
 	position: relative;
-	
 	background-color: rgb(13, 13, 13);
 	padding: 30px;
 }
@@ -14,17 +13,26 @@
 	font-size: 30px;
 }
 
+/*GALLERIE MODAL*/
 .galleryModal {
 	position: fixed;
-	left : 0px;
-	top : 0px;
+	left: 0px;
+	top: 0px;
 	right: 0px;
-	bottom : 0px;
-	
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	
+	bottom: 0px;
 	z-index: 1040;
+	overflow-y: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.galleryModal-dialog {
+	margin-top: 150px;
+}
+
+.galleryModal-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /*Animation*/
@@ -38,12 +46,10 @@
 .galleryModal.ng-hide-remove {
 	opacity: 0;
 	overflow: hidden;
-	 width: 0px;
-    height: 0px;
+	height: 0px;
 }
 
 .galleryModal.ng-hide-remove.ng-hide-remove-active {
 	opacity: 1;
-	 width: 100%;
-    height: 100%;
+	height: 100%;
 }
