@@ -22,3 +22,6 @@ insert into team_member
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
 values ('svan', 'Stephane', 'M', 'Operateur', '1988-10-18', 'Operateur de la team', 'TGR36, Tipx, T98', 'M', 'Musique/guitare, paint', 'apple', '2014-02-01', sysdate());
 
+-- Gallery
+
+insert into gallery (title, creation_date) values ('Les Membres', '2015-01-01');

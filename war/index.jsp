@@ -35,6 +35,7 @@
 <script src="app/news/newsModule.js"></script>
 <script src="app/member/memberModule.js"></script>
 <script src="app/recrutement/recrutementModule.js"></script>
+<script src="app/gallery/galleryModule.js"></script>
 <script src="app/app.js"></script>
 </head>
 <body ng-app="bsmtApp">

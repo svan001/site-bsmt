@@ -1,0 +1,10 @@
+<link href="css/gallery.css" rel="stylesheet">
+
+<div class="row">
+	<div ng-repeat="gallery in listGallery" class="col-lg-2 ">
+		<h3 class="text-capitalize">{{gallery.title}}</h3>
+		<img ng-src="img/gallery/{{gallery.id}}/thumbnail.jpg"
+			alt="Gallery{{gallery.id}}" src="" class="thumbnail img-rounded img-responsive" />
+
+	</div>
+</div>

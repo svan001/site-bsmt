@@ -2,7 +2,7 @@
 
 // Declare App
 var bsmtApp = angular.module('bsmtApp', [ 'ngRoute', 'ngAnimate', 'navbarModule',
-		'homeModule', 'newsModule', 'memberModule', 'recrutementModule' ]);
+		'homeModule', 'newsModule', 'memberModule', 'recrutementModule', 'galleryModule' ]);
 
 // CONFIG ROUTE
 bsmtApp.config([ '$routeProvider', function($routeProvider) {
@@ -22,6 +22,9 @@ bsmtApp.config([ '$routeProvider', function($routeProvider) {
 	}).when('/recrutement', {
 		templateUrl : 'app/recrutement/recrutement.html',
 		controller : 'recrutementCtrl'
+	}).when('/gallery', {
+		templateUrl : 'app/gallery/galleryList.html',
+		controller : 'galleryCtrl'
 	}).otherwise({
 		redirectTo : '/home'
 	})
