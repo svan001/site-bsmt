@@ -4,8 +4,8 @@ insert into team_member
 values ('soldier', 'Mathieu', 'M', 'Leader', sysdate(), 'Createur/leader/president de la team', 'T15, T8', 'L', 'Tiberius, ACIM, vert olive', '', sysdate(), sysdate());
 
 insert into team_member 
-(nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
-values ('forest', 'Jerome', 'M', 'Medic', sysdate(), 'Medic de la team', 'RAM, SAR-12', 'M', 'Petit calibres, couteau, comics', '', sysdate(), sysdate());
+(nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date, departure_date) 
+values ('forest', 'Jerome', 'M', 'Medic', sysdate(), 'Ex medic de la team', 'RAM, SAR-12', 'V', 'Petit calibres, couteau, comics', '', sysdate(), sysdate(), sysdate());
 
 
 insert into team_member 
@@ -25,6 +25,7 @@ values ('svan', 'Stephane', 'M', 'Operateur', '1988-10-18', 'Operateur de la tea
 -- Gallery
 
 insert into gallery (title, creation_date) values ('Les Membres', '2015-01-01');
+insert into gallery (title, creation_date) values ('Mini bootcamp', '2015-01-01');
 
 
 -- Picture
@@ -33,3 +34,7 @@ insert into picture (gallery, title, creation_date) values (1, 'macdo', '2015-01
 insert into picture (gallery, title, creation_date) values (1, 'forest', '2015-01-01');
 insert into picture (gallery, title, creation_date) values (1, 'scarface', '2015-01-01');
 insert into picture (gallery, title, creation_date) values (1, 'svan', '2015-01-01');
+
+insert into picture (gallery, title, creation_date) values (2, 'pompe', '2015-01-01');
+insert into picture (gallery, title, creation_date) values (2, 'gun', '2015-01-01');
+insert into picture (gallery, title, creation_date) values (2, 'wargame', '2015-01-01');
