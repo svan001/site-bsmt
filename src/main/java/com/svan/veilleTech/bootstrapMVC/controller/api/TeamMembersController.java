@@ -1,6 +1,6 @@
 /**
  * 2014
- * 24 déc. 2014 16:13:55 
+ * 24 dec. 2014 16:13:55 
  * @author stephane stephane.gronowski@gmail.com
  */
 package com.svan.veilleTech.bootstrapMVC.controller.api;
@@ -19,7 +19,7 @@ import com.svan.veilleTech.bootstrapMVC.service.TeamMemberService;
 
 /**
  * 
- * 24 déc. 2014 16:13:55
+ * 24 dï¿½c. 2014 16:13:55
  * 
  * @author stephane stephane.gronowski@gmail.com
  * 
