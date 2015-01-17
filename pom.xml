@@ -17,7 +17,7 @@
 
 	<dependencies>
 		<!-- Servlet & JSTL -->
-		<dependency> 
+		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
@@ -105,14 +105,9 @@
 		<!-- <dependency> <groupId>org.postgresql</groupId> <artifactId>postgresql</artifactId> 
 			<version>9.3-1100-jdbc41</version> </dependency> -->
 		<!-- Windows 7 -->
-		<!-- 
-		<dependency>
-			<groupId>postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>9.1-901.jdbc4</version>
-		</dependency>
- 		-->
-		
+		<!-- <dependency> <groupId>postgresql</groupId> <artifactId>postgresql</artifactId> 
+			<version>9.1-901.jdbc4</version> </dependency> -->
+
 		<!-- MySQL -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -127,6 +122,13 @@
 			<version>0.0.2</version>
 		</dependency>
 
+		<!-- OTHER -->
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
 
 		<!-- BEGIN TEST -->
 		<dependency>
