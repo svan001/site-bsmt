@@ -4,7 +4,7 @@
 <div class="galleryModal" ng-show="pictureToShow != null"
 	ng-click="pictureToShow = null">
 	<div class="modal-dialog galleryModal-dialog">
-		<img ng-src="img/gallery/{{gallery.id}}/{{pictureToShow.title}}.jpg"
+		<img ng-src="api/gallery/{{gallery.id}}/picture/{{pictureToShow.title}}"
 			alt="Gallery{{gallery.id}}" class="img-responsive galleryModal-img" />
 	</div>
 </div>
@@ -24,7 +24,7 @@
 			class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
 
 			<img ng-click="showPicture(picture)"
-				ng-src="img/gallery/{{gallery.id}}/{{picture.title}}.jpg"
+				ng-src="api/gallery/{{gallery.id}}/picture/{{picture.title}}"
 				alt="Gallery{{gallery.id}}" class="img-responsive" />
 		</div>
 	</div>

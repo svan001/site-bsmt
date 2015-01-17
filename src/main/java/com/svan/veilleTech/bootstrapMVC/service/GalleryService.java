@@ -5,6 +5,8 @@
  */
 package com.svan.veilleTech.bootstrapMVC.service;
 
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.List;
 
 import com.svan.veilleTech.bootstrapMVC.dto.GalleryDTO;
@@ -31,4 +33,14 @@ public interface GalleryService {
 	 * @return
 	 */
 	public GalleryDTO getById(Long id);
+
+	/**
+	 * Return the picture {@link InputStream}
+	 * 
+	 * @param idGallery
+	 * @param pictureName
+	 * @return
+	 * @throws FileNotFoundException
+	 */
+	public InputStream getPictureStream(Long idGallery, String pictureName) throws FileNotFoundException;
 }

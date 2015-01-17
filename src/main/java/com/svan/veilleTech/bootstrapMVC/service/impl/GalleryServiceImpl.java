@@ -5,6 +5,9 @@
  */
 package com.svan.veilleTech.bootstrapMVC.service.impl;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +27,7 @@ import com.svan.veilleTech.bootstrapMVC.service.GalleryService;
  */
 @Service
 @Transactional
-public class GalleryServiceImpl extends AbstractService implements
-		GalleryService {
+public class GalleryServiceImpl extends AbstractService implements GalleryService {
 
 	@Autowired
 	private GalleryDao galleryDao;
@@ -41,6 +43,12 @@ public class GalleryServiceImpl extends AbstractService implements
 	@Override
 	public GalleryDTO getById(Long id) {
 		return converter.toDest(galleryDao.findByPk(id));
+	}
+
+	@Override
+	public InputStream getPictureStream(Long idGallery, String pictureName) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		return new FileInputStream("C:\\galleries\\" + idGallery + "\\" + pictureName+".jpg");
 	}
 
 }

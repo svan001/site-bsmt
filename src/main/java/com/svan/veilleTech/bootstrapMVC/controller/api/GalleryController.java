@@ -3,8 +3,12 @@
  */
 package com.svan.veilleTech.bootstrapMVC.controller.api;
 
+import java.io.InputStream;
 import java.util.List;
 
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,16 +16,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.svan.fwk.controller.AbstractController;
 import com.svan.veilleTech.bootstrapMVC.dto.GalleryDTO;
 import com.svan.veilleTech.bootstrapMVC.service.GalleryService;
 
 /**
  * @author stephane 3 janv. 2015
- *
+ * 
  */
 @Controller
 @RequestMapping("/api/gallery")
-public class GalleryController {
+public class GalleryController extends AbstractController {
 
 	@Autowired
 	private GalleryService galleryService;
@@ -38,4 +43,15 @@ public class GalleryController {
 		return galleryService.getById(id);
 	}
 
+	@RequestMapping(value = "/{idGallery}/picture/{pictureName}", method = RequestMethod.GET)
+	@ResponseBody
+	public void getById(@PathVariable Long idGallery, @PathVariable String pictureName, HttpServletResponse response) {
+
+		try {
+			InputStream in = galleryService.getPictureStream(idGallery, pictureName);
+			IOUtils.copy(in, response.getOutputStream());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }
