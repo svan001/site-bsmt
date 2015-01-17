@@ -29,7 +29,6 @@ public class Article {
 
 	@Column(name = "content", nullable = false, length = 5000)
 	private String content;
-	
 
 	// ------------ Creation/update -----------------------------------------//
 
@@ -98,6 +97,10 @@ public class Article {
 	 */
 	public Calendar getCreationDate() {
 		return creationDate;
+	}
+
+	public Calendar getUpdateDate() {
+		return updateDate;
 	}
 
 }
