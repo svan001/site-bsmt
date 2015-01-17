@@ -28,13 +28,13 @@ public class GalleryController {
 
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	@ResponseBody
-	private List<GalleryDTO> getAll() {
+	public List<GalleryDTO> getAll() {
 		return galleryService.getAllGalleries();
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	@ResponseBody
-	private GalleryDTO getById(@PathVariable Long id) {
+	public GalleryDTO getById(@PathVariable Long id) {
 		return galleryService.getById(id);
 	}
 
