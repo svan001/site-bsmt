@@ -28,11 +28,20 @@ footer {
 
 .well {
 	background-color: inherit;
-	font-size: 17px;
+}/*		font-size: 17px;
 	
 	margin-top: 30px;
 	margin-bottom: 30px;
+}*/
+.jumbotron {
+	background-color: inherit;
 }
+
+.h2News{
+	text-transform: uppercase;
+	
+}
+
 .view-animate-container {
 	position: relative;
 }
