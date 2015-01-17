@@ -50,11 +50,13 @@ public class Picture {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Calendar updateDate;
 
+	@SuppressWarnings("unused")
 	@PrePersist
 	private void prePersist() {
 		creationDate = GregorianCalendar.getInstance();
 	}
 
+	@SuppressWarnings("unused")
 	@PreUpdate
 	private void preUpdate() {
 		updateDate = GregorianCalendar.getInstance();
