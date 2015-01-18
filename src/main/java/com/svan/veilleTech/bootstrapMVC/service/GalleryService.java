@@ -39,8 +39,10 @@ public interface GalleryService {
 	 * 
 	 * @param idGallery
 	 * @param pictureName
+	 * @param size
 	 * @return
 	 * @throws FileNotFoundException
 	 */
-	public InputStream getPictureStream(Long idGallery, String pictureName) throws FileNotFoundException;
+	public InputStream getPictureStream(Long idGallery, String pictureName,
+			String size) throws FileNotFoundException;
 }

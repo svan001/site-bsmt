@@ -51,12 +51,14 @@ public class GalleryServiceImpl extends AbstractService implements
 	}
 
 	@Override
-	public InputStream getPictureStream(Long idGallery, String pictureName)
-			throws FileNotFoundException {
-		// TODO Auto-generated method stub
+	public InputStream getPictureStream(Long idGallery, String pictureName,
+			String size) throws FileNotFoundException {
+		// "IMG_DIR / galleries / ID / [SIZE] / picture . jpg"
+		String sizePath = size == null ? "" : size;
+
 		return new FileInputStream(IMG_DIR + File.separatorChar + "galleries"
 				+ File.separatorChar + idGallery + File.separatorChar
-				+ pictureName + ".jpg");
+				+ sizePath + File.separatorChar + pictureName + ".jpg");
 	}
 
 }
