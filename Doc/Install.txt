@@ -10,4 +10,4 @@ Ajouter ressource a tomcat
 	/>
 	
 
--- Var d'env pour selectionner le ficier de log : -Dlog4j.configuration="./log4jDEV.xml" 		
+-- Var d'env pour selectionner le fichier de log : -Dlog4j.configuration="./log4jDEV.xml" 		
