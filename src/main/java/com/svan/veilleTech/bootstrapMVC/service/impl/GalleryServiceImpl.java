@@ -5,6 +5,7 @@
  */
 package com.svan.veilleTech.bootstrapMVC.service.impl;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -27,7 +28,11 @@ import com.svan.veilleTech.bootstrapMVC.service.GalleryService;
  */
 @Service
 @Transactional
-public class GalleryServiceImpl extends AbstractService implements GalleryService {
+public class GalleryServiceImpl extends AbstractService implements
+		GalleryService {
+
+	private static final String IMG_DIR = System.getenv("IMG_DIR") != null ? System
+			.getenv("IMG_DIR") : "/var/www/img";
 
 	@Autowired
 	private GalleryDao galleryDao;
@@ -46,9 +51,12 @@ public class GalleryServiceImpl extends AbstractService implements GalleryServic
 	}
 
 	@Override
-	public InputStream getPictureStream(Long idGallery, String pictureName) throws FileNotFoundException {
+	public InputStream getPictureStream(Long idGallery, String pictureName)
+			throws FileNotFoundException {
 		// TODO Auto-generated method stub
-		return new FileInputStream("C:\\galleries\\" + idGallery + "\\" + pictureName+".jpg");
+		return new FileInputStream(IMG_DIR + File.separatorChar + "galleries"
+				+ File.separatorChar + idGallery + File.separatorChar
+				+ pictureName + ".jpg");
 	}
 
 }
