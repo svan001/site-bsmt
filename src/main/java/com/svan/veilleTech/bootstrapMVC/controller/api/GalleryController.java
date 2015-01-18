@@ -9,6 +9,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,6 +29,8 @@ import com.svan.veilleTech.bootstrapMVC.service.GalleryService;
 @RequestMapping("/api/gallery")
 public class GalleryController extends AbstractController {
 
+	private Logger LOGGER = Logger.getLogger(GalleryController.class);
+
 	@Autowired
 	private GalleryService galleryService;
 
@@ -45,13 +48,15 @@ public class GalleryController extends AbstractController {
 
 	@RequestMapping(value = "/{idGallery}/picture/{pictureName}", method = RequestMethod.GET)
 	@ResponseBody
-	public void getById(@PathVariable Long idGallery, @PathVariable String pictureName, HttpServletResponse response) {
+	public void getById(@PathVariable Long idGallery,
+			@PathVariable String pictureName, HttpServletResponse response) {
 
 		try {
-			InputStream in = galleryService.getPictureStream(idGallery, pictureName);
+			InputStream in = galleryService.getPictureStream(idGallery,
+					pictureName);
 			IOUtils.copy(in, response.getOutputStream());
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.error("Error get picture", e);
 		}
 	}
 }

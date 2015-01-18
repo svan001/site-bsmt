@@ -9,5 +9,5 @@ Ajouter ressource a tomcat
 	url="jdbc:postgresql://localhost:5432/bootstrap" 
 	/>
 	
-http://178.62.163.121/svan001/test-bootstrap-mvc.git
-	
+
+-- Var d'env pour selectionner le ficier de log : -Dlog4j.configuration="./log4jDEV.xml" 		
