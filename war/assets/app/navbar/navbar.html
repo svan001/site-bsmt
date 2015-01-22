@@ -2,7 +2,7 @@
 <link href="css/header.css" rel="stylesheet">
 
 <!-- header container -->
-<div class="container top-container">
+<div class="container top-container" ng-controller="navbarCtrl">
 	<!-- IMG -->
 	<div class="row">
 
@@ -23,21 +23,38 @@
 
 	<!-- Nav bar -->
 	<div class="row navbar-row">
-		<nav id="mainNavBar" class="navbar navbar-inverse">
-			<!-- navbar-fixed-top"> -->
-			<ul class="nav navbar-nav">
-				<li ng-class="selectedLi == 'home' ? 'active' : ''"><a ng-click="selectedLi = 'home'" href="#/home">Accueil</a></li>
-				<li ng-class="selectedLi == 'news' ? 'active' : ''"><a ng-click="selectedLi = 'news'" href="#/news">Les news</a></li>
-				<li ng-class="selectedLi == 'members' ? 'active' : ''"><a ng-click="selectedLi = 'members'" href="#/member">Les membres</a></li>
-				<li ng-class="selectedLi == 'gallery' ? 'active' : ''"><a ng-click="selectedLi = 'gallery'" href="#/gallery">La galerie</a></li>
-				<li><a href="http://bsmt.forumactif.org/">Le forum</a></li>
+		<nav id="mainNavBar" class="navbar navbar-inverse" role="navigation">
+			<div class="navbar-header">
+				<button type="button" 
+					ng-click="isCollapsed = !isCollapsed" class="navbar-toggle">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" ng-click="selectedLi = 'home'" href="#/home">Accueil</a>
+			</div>
 
-			</ul>
-			<ul class="nav navbar-nav pull-right">
-				<li ng-class="selectedLi == 'recrutement' ? 'active' : ''"
-					class="recrutement-li"><a
-					ng-click="selectedLi = 'recrutement'" href="#/recrutement">RECRUTEMENT</a></li>
-			</ul>
+			<div id="navbarCollapse"
+				class="navbar-collapse bs-js-navbar-collapse" collapse="isCollapsed">
+				<ul class="nav navbar-nav">
+					<!-- <li ng-class="selectedLi == 'home' ? 'active' : ''"><a
+						ng-click="selectedLi = 'home'" href="#/home">Accueil</a></li> -->
+					<li ng-class="selectedLi == 'news' ? 'active' : ''"><a
+						ng-click="selectLi('news')" href="#/news">Les news</a></li>
+					<li ng-class="selectedLi == 'members' ? 'active' : ''"><a
+						ng-click="selectLi('members')" href="#/member">Les membres</a></li>
+					<li ng-class="selectedLi == 'gallery' ? 'active' : ''"><a
+						ng-click="selectLi('gallery')" href="#/gallery">La galerie</a></li>
+					<li><a href="http://bsmt.forumactif.org/">Le forum</a></li>
+
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li ng-class="selectedLi == 'recrutement' ? 'active' : ''"
+						class="recrutement-li"><a
+						ng-click="selectLi('recrutement')" href="#/recrutement">RECRUTEMENT</a></li>
+				</ul>
+			</div>
 		</nav>
 	</div>
+
 </div>

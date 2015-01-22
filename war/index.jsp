@@ -30,6 +30,8 @@
 <script src="angular/angular-route.js"></script>
 <script src="angular/angular-animate.js"></script>
 
+<script src="bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
+
 <script src="app/navbar/navbarModule.js"></script>
 <script src="app/home/homeModule.js"></script>
 <script src="app/news/newsModule.js"></script>
@@ -41,7 +43,7 @@
 <body ng-app="bsmtApp">
 
 	<!-- header container -->
-	<div ng-controller="navbarCtrl" ng-include="'app/navbar/navbar.html'">
+	<div ng-include="'app/navbar/navbar.html'">
 	</div>
 	<!-- END header container -->
 
