@@ -2,8 +2,8 @@
 
 // Declare App
 var bsmtApp = angular.module('bsmtApp', [ 'ngRoute', 'ngAnimate',
-		'navbarModule', 'homeModule', 'newsModule', 'memberModule',
-		'recrutementModule', 'galleryModule' ]);
+		'ui.bootstrap', 'navbarModule', 'homeModule', 'newsModule',
+		'memberModule', 'recrutementModule', 'galleryModule' ]);
 
 // CONFIG ROUTE
 bsmtApp.config([ '$routeProvider', function($routeProvider) {
