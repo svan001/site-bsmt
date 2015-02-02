@@ -1,7 +1,7 @@
 -- TEAM MEMBER
 insert into team_member 
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
-values ('soldier', 'Mathieu', 'M', 'Leader', sysdate(), 'Createur/leader/president de la team', 'T15, T8', 'L', 'Tiberius, ACIM, vert olive', '', sysdate(), sysdate());
+values ('soldier', 'Mathieu', 'M', 'leader/medic', sysdate(), 'Createur/leader/president de la team', 't15, t8.1 et a5 rt custo ump', 'L', 'Les bonnes series TV, paintball avec mes potes', 'La triche et les personnes non correcte dans la vie en générale', sysdate(), sysdate());
 
 insert into team_member 
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date, departure_date) 
@@ -10,7 +10,7 @@ values ('forest', 'Jerome', 'M', 'Medic', sysdate(), 'Ex medic de la team', 'RAM
 
 insert into team_member 
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
-values ('scarface', 'Sebastien', 'M', 'Operateur', sysdate(), 'Operateur de la team', 'T15, T8', 'M', 'Tiberius, \"grenade\"', '', sysdate(), sysdate());
+values ('scarface', 'Sebastien', 'M', 'Operateur', '1985-01-03', 'Operateur de la team', 'T15, T8', 'M', 'Les tatouages', 'Le pastice', '2014-10-01', sysdate());
 
 
 insert into team_member 
