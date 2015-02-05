@@ -4,7 +4,7 @@
 
 	<div class="row">
 		<h2 class="text-capitalize"
-			ng-class="{'postulantNickName' : teamMember.status == 'P', 'memberNickName' : teamMember.status == 'M', 'leaderNickName' : teamMember.status == 'L', 'veteranNickName' : teamMember.status == 'V'}">
+			ng-class="{'postulantNickName' : teamMember.status == 'P', 'memberNickName' : teamMember.status == 'M', 'leaderNickName' : teamMember.status == 'L', 'veteranNickName' : teamMember.status == 'V' || teamMember.status == 'A'}">
 
 			<a href="#/member" class="btn btn-link"> <span
 				class="retourButton glyphicon glyphicon glyphicon-circle-arrow-left"
@@ -23,6 +23,7 @@
 					<dd ng-switch-when="L">Leader</dd>
 					<dd ng-switch-when="P">Postulant</dd>
 					<dd ng-switch-when="V">Veteran</dd>
+					<dd ng-switch-when="A">Amis de la team</dd>
 				</div>
 
 				<dt>Prenom</dt>
