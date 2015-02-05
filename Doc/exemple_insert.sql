@@ -26,6 +26,10 @@ insert into team_member
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
 values ('velotr', 'Jordan', 'M', 'Operateur', '1993-09-08', 'Opérateur', 'RAP468, crosman 3357', 'M', 'La bière', 'Le froid', '2013-11-08', sysdate());
 
+insert into team_member 
+(nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
+values ('ScHark_-RaCe', 'Pierre', 'M', 'Renfort/amis', '1999-09-06', 'Renfort/amis de la team', 'BT Delta , TPX', 'A', 'Le fair-play, le respect , l''amusement , les rigolades...', 'Le non respect , n''aime pas l''école :p', '2012-11-01', sysdate());
+
 
 -- Gallery
 
