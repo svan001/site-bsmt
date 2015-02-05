@@ -44,6 +44,7 @@ insert into picture (gallery, title, creation_date) values (1, 'forest', '2015-0
 insert into picture (gallery, title, creation_date) values (1, 'scarface', '2015-01-01');
 insert into picture (gallery, title, creation_date) values (1, 'svan', '2015-01-01');
 insert into picture (gallery, title, creation_date) values (1, 'velotr', '2015-01-01');
+insert into picture (gallery, title, creation_date) values (1, 'ScHark_-RaCe', '2015-01-01');
 
 insert into picture (gallery, title, creation_date) values (2, 'pompe', '2015-01-01');
 insert into picture (gallery, title, creation_date) values (2, 'gun', '2015-01-01');
