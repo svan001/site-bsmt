@@ -30,6 +30,10 @@ insert into team_member
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
 values ('ScHark_-RaCe', 'Pierre', 'M', 'Renfort/amis', '1999-09-06', 'Renfort/amis de la team', 'BT Delta , TPX', 'A', 'Le fair-play, le respect , l''amusement , les rigolades...', 'Le non respect , n''aime pas l''école :p', '2012-11-01', sysdate());
 
+insert into team_member 
+(nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
+values ('el guereros', 'Michael', 'M', 'Operateur/gunner', '1987-02-27', 'Gunner de la team', 'Sulfateuse', 'M', '', '', '2013-06-28', sysdate());
+
 
 -- Gallery
 
@@ -45,6 +49,7 @@ insert into picture (gallery, title, creation_date) values (1, 'scarface', '2015
 insert into picture (gallery, title, creation_date) values (1, 'svan', '2015-01-01');
 insert into picture (gallery, title, creation_date) values (1, 'velotr', '2015-01-01');
 insert into picture (gallery, title, creation_date) values (1, 'ScHark_-RaCe', '2015-01-01');
+insert into picture (gallery, title, creation_date) values (1, 'el guereros', '2015-01-01');
 
 insert into picture (gallery, title, creation_date) values (2, 'pompe', '2015-01-01');
 insert into picture (gallery, title, creation_date) values (2, 'gun', '2015-01-01');
