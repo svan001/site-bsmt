@@ -31,8 +31,8 @@ import com.svan.veilleTech.bootstrapMVC.service.GalleryService;
 public class GalleryServiceImpl extends AbstractService implements
 		GalleryService {
 
-	private static final String IMG_DIR = System.getenv("IMG_DIR") != null ? System
-			.getenv("IMG_DIR") : "/var/www/img";
+	private static final String IMG_DIR = System.getProperty("IMG_DIR") != null ? System
+			.getProperty("IMG_DIR") : "/var/www/img";
 
 	@Autowired
 	private GalleryDao galleryDao;
