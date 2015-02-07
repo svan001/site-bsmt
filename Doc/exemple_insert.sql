@@ -1,7 +1,7 @@
 -- TEAM MEMBER
 insert into team_member 
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
-values ('soldier', 'Mathieu', 'M', 'leader/medic', sysdate(), 'Createur/leader/president de la team', 't15, t8.1 et a5 rt custo ump', 'L', 'Les bonnes series TV, paintball avec mes potes', 'La triche et les personnes non correcte dans la vie en générale', sysdate(), sysdate());
+values ('soldier', 'Mathieu', 'M', 'leader, medic', sysdate(), 'Createur/leader/president de la team', 't15, t8.1 et a5 rt custo ump', 'L', 'Les bonnes series TV, paintball avec mes potes', 'La triche et les personnes non correcte dans la vie en générale', sysdate(), sysdate());
 
 insert into team_member 
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date, departure_date) 
@@ -28,11 +28,11 @@ values ('velotr', 'Jordan', 'M', 'Operateur', '1993-09-08', 'Opérateur', 'RAP46
 
 insert into team_member 
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
-values ('ScHark_-RaCe', 'Pierre', 'M', 'Renfort/amis', '1999-09-06', 'Renfort/amis de la team', 'BT Delta , TPX', 'A', 'Le fair-play, le respect , l''amusement , les rigolades...', 'Le non respect , n''aime pas l''école :p', '2012-11-01', sysdate());
+values ('ScHark_-RaCe', 'Pierre', 'M', 'Renfort, amis', '1999-09-06', 'Renfort/amis de la team', 'BT Delta , TPX', 'A', 'Le fair-play, le respect , l''amusement , les rigolades...', 'Le non respect , n''aime pas l''école :p', '2012-11-01', sysdate());
 
 insert into team_member 
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
-values ('el guereros', 'Michael', 'M', 'Operateur/gunner', '1987-02-27', 'Gunner de la team', 'Sulfateuse', 'M', '', '', '2013-06-28', sysdate());
+values ('el guereros', 'Michael', 'M', 'Operateur, gunner', '1987-02-27', 'Gunner de la team', 'Sulfateuse', 'M', '', '', '2013-06-28', sysdate());
 
 insert into team_member 
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
