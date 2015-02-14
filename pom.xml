@@ -11,7 +11,8 @@
 	<properties>
 		<!-- <spring.version>3.1.1.RELEASE</spring.version> -->
 		<!-- version pour tiles -->
-		<spring.version>3.2.11.RELEASE</spring.version>
+		<spring.version>4.1.4.RELEASE</spring.version>
+		<jackson.version>2.4.4</jackson.version>
 	</properties>
 
 
@@ -36,11 +37,21 @@
 		</dependency>
 
 
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-mapper-asl</artifactId>
-			<version>1.7.1</version>
-		</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-core</artifactId>
+		<version>${jackson.version}</version>
+	</dependency>
+	 <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>${jackson.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${jackson.version}</version>
+        </dependency>
 
 		<!-- SPRING -->
 		<dependency>
@@ -119,7 +130,7 @@
 		<dependency>
 			<groupId>com.svan.fwk</groupId>
 			<artifactId>svanFWK</artifactId>
-			<version>0.0.2</version>
+			<version>0.0.3</version>
 		</dependency>
 
 		<!-- OTHER -->
