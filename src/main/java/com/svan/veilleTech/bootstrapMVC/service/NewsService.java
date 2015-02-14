@@ -21,9 +21,11 @@ public interface NewsService {
 	/**
 	 * Return the last news
 	 * 
+	 * @param limit
+	 *            nb max de news
 	 * @return
 	 */
-	public List<NewsDTO> getLastNews();
+	public List<NewsDTO> getLastNews(Integer limit);
 
 	/**
 	 * Return the news

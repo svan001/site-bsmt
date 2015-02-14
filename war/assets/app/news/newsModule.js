@@ -14,7 +14,7 @@ newsModule.controller('newsCtrl', [ '$scope', 'News',
 
 function($scope, News) {
 	// Init
-	var listNews = $scope.listNews = News.query();
+	var listNews = $scope.listNews = News.query({limit : 5});
 
 	// Ajout d'une news
 	$scope.addNews = function(formNews) {

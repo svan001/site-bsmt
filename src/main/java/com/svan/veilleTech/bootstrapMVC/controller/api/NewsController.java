@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.svan.veilleTech.bootstrapMVC.dto.NewsDTO;
@@ -36,8 +37,8 @@ public class NewsController {
 
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	@ResponseBody
-	public List<NewsDTO> getAll() {
-		return newsService.getLastNews();
+	public List<NewsDTO> getAll(@RequestParam(required = false)  Integer limit) {
+		return newsService.getLastNews(limit);
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)

@@ -38,9 +38,12 @@ public class NewsServiceImpl extends AbstractService implements NewsService {
 	private NewsConverter converter;
 
 	@Override
-	public List<NewsDTO> getLastNews() {
-		return converter.toDest(newsDao
-				.getLastNews(DEFAULT_GET_LAST_NEWS_MAX_RESULT));
+	public List<NewsDTO> getLastNews(Integer limit) {
+		if (limit == null) {
+			limit = DEFAULT_GET_LAST_NEWS_MAX_RESULT;
+		}
+
+		return converter.toDest(newsDao.getLastNews(limit));
 	}
 
 	@Override
