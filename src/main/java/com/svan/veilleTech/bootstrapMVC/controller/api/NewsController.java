@@ -8,6 +8,8 @@ package com.svan.veilleTech.bootstrapMVC.controller.api;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -48,6 +50,16 @@ public class NewsController {
 	@ResponseBody
 	public NewsDTO addNews(@RequestBody NewsDTO newsDTO) {
 		return newsService.addNews(newsDTO);
+	}
+
+	@RequestMapping(value = "/{id}/content", method = RequestMethod.GET, produces = "text/html;charset=UTF-8")
+	@ResponseBody
+	public ResponseEntity<String> getContent(@PathVariable Long id) {
+		NewsDTO news = newsService.getById(id);
+
+		ResponseEntity<String> res = new ResponseEntity<String>(news.getContent(),  HttpStatus.OK);
+
+		return res;
 	}
 
 }
