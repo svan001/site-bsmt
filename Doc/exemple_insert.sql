@@ -67,3 +67,45 @@ insert into picture (gallery, title, creation_date) values (2, 'wargame', '2015-
 --DELETE
 delete from picture where gallery= 1 and title = 'forest';
 
+
+-- ###########################################################################################################
+-- NEWS
+-- ###########################################################################################################
+
+-- INSERT
+
+insert into news (author, title, creation_date, content) 
+values 
+( 'Svan', 'Titre News compliquée', sysdate(), '
+
+<h2>
+Sous titre
+</h2>
+<p>
+Premier paragraphe d''une news compliqué qui pose le sujet comment cetait trop la classe l''op de l''autre jour on et top bon et tt et tt.
+Premier paragraphe d''une news compliqué qui pose le sujet comment cetait trop la classe l''op de l''autre jour on et top bon et tt et tt.
+Premier paragraphe d''une news compliqué qui pose le sujet comment cetait trop la classe l''op de l''autre jour on et top bon et tt et tt.
+</p>
+
+<h2>
+Sous titre
+</h2>
+
+<p>
+Pi franchement jsuis trop vbon et tout ca dechire ca maman
+Premier paragraphe d''une news compliqué qui pose le sujet comment cetait trop la classe l''op de l''autre jour on et top bon et tt et tt.
+</p>
+
+<p>
+Pi franchement jsuis trop vbon et tout ca dechire ca maman
+</p>
+
+<img	ng-src="api/gallery/1/picture/thumbnail"
+				alt="Gallery1" src=""
+				class="thumbnail img-rounded img-responsive" />
+');
+
+-- UPDATE
+update news 
+set content = '
+where id = ;
