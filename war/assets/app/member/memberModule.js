@@ -3,7 +3,7 @@
 // Declare module
 var memberModule = angular.module('memberModule', [ 'ngResource', 'ngRoute', 'ngAnimate' ]);
 
-// Service
+// Resouce
 memberModule.factory('TeamMember', [ '$resource', function($resource) {
 	return $resource('api/teamMember/:id', {
 		id : '@id'
