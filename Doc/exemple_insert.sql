@@ -76,33 +76,15 @@ delete from picture where gallery= 1 and title = 'forest';
 
 insert into news (author, title, creation_date, content) 
 values 
-( 'Svan', 'Titre News compliquée', sysdate(), '
-
-<h2>
-Sous titre
-</h2>
+( 'Cpt soldier', 'Journée à la grotte !', sysdate(), '
 <p>
-Premier paragraphe d''une news compliqué qui pose le sujet comment cetait trop la classe l''op de l''autre jour on et top bon et tt et tt.
-Premier paragraphe d''une news compliqué qui pose le sujet comment cetait trop la classe l''op de l''autre jour on et top bon et tt et tt.
-Premier paragraphe d''une news compliqué qui pose le sujet comment cetait trop la classe l''op de l''autre jour on et top bon et tt et tt.
+La black shark milsim team remercie les The UNIT MilsimTeam pour leur accueil aujourdhui à la grotte où nous avons passer une journée terrible, grand merci a eux !! 
 </p>
-
-<h2>
-Sous titre
-</h2>
-
+<p>Merci aussi a toutes les teams présente : TASK FORCE 141, Toxico2 Paintball Milsim, LcDeux, FRAP Milsim, Eagle One Paintball Milsim, les spectres et zendoli grand plaisir d''avoir revue certain est d''en avoir rencontré d''autre.
+</p>
 <p>
-Pi franchement jsuis trop vbon et tout ca dechire ca maman
-Premier paragraphe d''une news compliqué qui pose le sujet comment cetait trop la classe l''op de l''autre jour on et top bon et tt et tt.
+En espérant tous vous revoir bientot !
 </p>
-
-<p>
-Pi franchement jsuis trop vbon et tout ca dechire ca maman
-</p>
-
-<img	ng-src="api/gallery/1/picture/thumbnail"
-				alt="Gallery1" src=""
-				class="thumbnail img-rounded img-responsive" />
 ');
 
 -- UPDATE
