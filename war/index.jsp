@@ -30,6 +30,8 @@
 <script src="angular/angular-route.js"></script>
 <script src="angular/angular-animate.js"></script>
 
+<script src="angular/i18n/angular-locale_fr-fr.js"></script>
+
 <script src="bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
 
 <script src="app/navbar/navbarModule.js"></script>
