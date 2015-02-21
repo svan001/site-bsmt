@@ -85,6 +85,10 @@ La black shark milsim team remercie les The UNIT MilsimTeam pour leur accueil au
 <p>
 En espérant tous vous revoir bientot !
 </p>
+
+<img	alt="Gallery1" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/p480x480/10940623_978951058789191_1276044703747315962_n.jpg?oh=6fa99f236ea7c9bea7f9df895f15b3b1&oe=55485D56&__gda__=1434584496_919f9ac749594409d2e484004d74b759"
+				class="thumbnail img-rounded img-responsive" />
+
 ');
 
 -- UPDATE
