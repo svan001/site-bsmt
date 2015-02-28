@@ -31,7 +31,7 @@ values ('ScHark_-RaCe', 'Pierre', 'M', 'Renfort, amis', '1999-09-06', 'Renfort/a
 
 insert into team_member 
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 
-values ('el guereros', 'Michael', 'M', 'Operateur, gunner', '1987-02-27', 'Gunner de la team', 'Sulfateuse', 'M', '', '', '2013-06-28', sysdate());
+values ('el guereros', 'Michael', 'M', 'Gunner', '1987-02-27', 'Gunner de la team', 'Sulfateuse', 'M', '', '', '2013-06-28', sysdate());
 
 insert into team_member 
 (nick_name, forname, sexe, role, birth_date, description, gear, status, likes, doesntlikes, membership_date, creation_date) 

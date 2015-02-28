@@ -1,6 +1,9 @@
 pscp.exe -P 4444 C:\galleries\3 svan@178.62.38.26:/var/www/img/gallerie
 
 
+update team_member set role = 'Gunner' where nick_name = 'el guereros';
+
+
 insert into news (author, title, creation_date, content) 
 values 
 ( 'Svan', 'Rencontre LHRM', sysdate(), '
