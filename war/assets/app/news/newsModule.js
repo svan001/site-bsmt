@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare module
-var newsModule = angular.module('newsModule', [ 'ngResource' ]);
+var newsModule = angular.module('newsModule', [ 'ngResource', 'ngSanitize' ]);
 
 newsModule.factory('News', [ '$resource', function($resource) {
 	return $resource('api/news/:id/', {

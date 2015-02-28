@@ -29,6 +29,7 @@
 <script src="angular/angular-resource.js"></script>
 <script src="angular/angular-route.js"></script>
 <script src="angular/angular-animate.js"></script>
+<script src="angular/angular-sanitize.js"></script>
 
 <script src="angular/i18n/angular-locale_fr-fr.js"></script>
 
