@@ -24,15 +24,28 @@ galleryModule.controller('galleryCtrl', [ '$scope', 'Gallery',
 galleryModule.controller('showGalleryCtrl', [ '$scope', '$routeParams',
 		'Gallery', function($scope, $routeParams, Gallery) {
 
+			// INIT
 			var gallery = $scope.gallery = Gallery.get({
 				id : $routeParams.idGallery
 			});
 
 			$scope.pictureToShow = null;
+			$scope.showModal = false;
 			
+
 			// Service
-			$scope.showPicture = function(picture){
+			$scope.selectPicture = function(picture) {
 				$scope.pictureToShow = picture;
+				$scope.showModal = picture != null;
+			};
+
+			$scope.getModalPictureUrl = function() {
+				if ($scope.pictureToShow != null) {
+					return 'api/gallery/' + gallery.id + '/picture/'
+							+ $scope.pictureToShow.title;
+				} else {
+					return 'img/loading-gallery.gif';
+				}
 			};
 			// END Service
 		} // END CONTROLLER

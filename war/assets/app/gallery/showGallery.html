@@ -1,11 +1,12 @@
 <link href="css/gallery.css" rel="stylesheet">
 
 
-<div class="galleryModal" ng-show="pictureToShow != null"
-	ng-click="pictureToShow = null">
+<div class="galleryModal" ng-show="showModal"
+	ng-click="selectPicture(null)">
+
 	<div class="modal-dialog galleryModal-dialog">
-		<img ng-src="api/gallery/{{gallery.id}}/picture/{{pictureToShow.title}}"
-			alt="Gallery{{gallery.id}}" class="img-responsive galleryModal-img" />
+		<img ng-src="{{getModalPictureUrl()}}" alt="Gallery{{gallery.id}}"
+			class="img-responsive galleryModal-img" />
 	</div>
 </div>
 
@@ -23,7 +24,7 @@
 		<div ng-repeat="picture in gallery.pictures"
 			class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 
-			<img ng-click="showPicture(picture)"
+			<img ng-click="selectPicture(picture)"
 				ng-src="api/gallery/{{gallery.id}}/picture/{{picture.title}}?size=mini"
 				alt="Gallery{{gallery.id}}" class=" img-responsive" />
 		</div>
