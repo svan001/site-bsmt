@@ -1,3 +1,5 @@
+pscp.exe -P 4444 C:\galleries\3 svan@178.62.38.26:/var/www/img/gallerie
+
 
 insert into news (author, title, creation_date, content) 
 values 
