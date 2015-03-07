@@ -14,9 +14,6 @@
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 
-<script
-	src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -59,9 +56,5 @@
 		<p>COPYRIGHT BLACK SHARK MILSIM TEAM 2015</p>
 	</footer>
 
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
 </body>
 </html>
