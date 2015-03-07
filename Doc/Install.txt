@@ -11,4 +11,5 @@ Ajouter ressource a tomcat
 	
 
 -- Var d'env pour selectionner le fichier de log : -Dlog4j.configuration="./log4jDEV.xml"
--- Var d'env pour selectionner le dossier avec les images (si necessaire) : -DIMG_DIR="" 		 		
+-- Var d'env pour selectionner le dossier avec les images (si necessaire) : -DIMG_DIR="" 
+-- Var d'env pour etre en DEV (minification ...) : -DENV="DEV" 		 		

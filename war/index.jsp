@@ -21,12 +21,19 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
+<%if(System.getProperty("ENV").equals("DEVg")) {%> 
 <script src="angular/angular.js"></script>
 <script src="angular/angular-resource.js"></script>
 <script src="angular/angular-route.js"></script>
 <script src="angular/angular-animate.js"></script>
 <script src="angular/angular-sanitize.js"></script>
+<%} else { %>
+<script src="angular/angular.min.js"></script>
+<script src="angular/angular-resource.min.js"></script>
+<script src="angular/angular-route.min.js"></script>
+<script src="angular/angular-animate.min.js"></script>
+<script src="angular/angular-sanitize.min.js"></script>
+<%} %>
 
 <script src="angular/i18n/angular-locale_fr-fr.js"></script>
 
