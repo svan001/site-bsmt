@@ -21,7 +21,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-<%if(System.getProperty("ENV").equals("DEVg")) {%> 
+<%if(System.getProperty("ENV").equals("DEV")) {%> 
 <script src="angular/angular.js"></script>
 <script src="angular/angular-resource.js"></script>
 <script src="angular/angular-route.js"></script>
