@@ -98,12 +98,14 @@
 		</dependency>
 		<!-- END SPRING -->
 
+		<!-- 
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-extras</artifactId>
 			<version>3.0.5</version>
 		</dependency>
-
+ 		-->
+ 
 		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
