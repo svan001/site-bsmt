@@ -47,11 +47,14 @@ public class NewsController {
 		return newsService.getById(id);
 	}
 
+	
+	/* TEMPORAIRE : Issue #23
 	@RequestMapping(value = "", method = RequestMethod.POST)
 	@ResponseBody
 	public NewsDTO addNews(@RequestBody NewsDTO newsDTO) {
 		return newsService.addNews(newsDTO);
 	}
+	*/
 
 	@RequestMapping(value = "/{id}/content", method = RequestMethod.GET, produces = "text/html;charset=UTF-8")
 	@ResponseBody
