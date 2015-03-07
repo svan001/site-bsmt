@@ -24,7 +24,7 @@
         <property name="suffix" value=".jsp"/>
     </bean>
      -->
-	<!-- TILES -->
+	<!-- TILES 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.tiles3.TilesViewResolver" />
 
@@ -37,14 +37,13 @@
 			</list>
 		</property>
 	</bean>
-
+	-->
     
     
     <!-- This tag allows for mapping the DispatcherServlet to "/" -->
     <mvc:default-servlet-handler/>
  
     <!-- resources exclusions from servlet mapping -->
-    <mvc:resources mapping="/jquery/**" location="/assets/jquery/"/>
     <mvc:resources mapping="/bootstrap/**" location="/assets/bootstrap/"/>
     <mvc:resources mapping="/angular/**" location="/assets/angular/"/>
     <mvc:resources mapping="/css/**" location="/assets/css/"/>
