@@ -29,7 +29,7 @@ import com.svan.veilleTech.bootstrapMVC.service.NewsService;
 @Transactional
 public class NewsServiceImpl extends AbstractService implements NewsService {
 
-	private static final int DEFAULT_GET_LAST_NEWS_MAX_RESULT = 10;
+	private static final int DEFAULT_GET_LAST_NEWS_MAX_RESULT = 20;
 
 	@Autowired
 	private NewsDao newsDao;
