@@ -40,3 +40,23 @@ insert into picture (gallery, title, creation_date) values (3, 'terro', sysdate(
 insert into picture (gallery, title, creation_date) values (3, 'velotr', sysdate());
 insert into picture (gallery, title, creation_date) values (3, 'zlatan', sysdate());
 insert into picture (gallery, title, creation_date) values (3, 'zlatan2', sysdate());
+
+
+--  NEWS MACDO
+insert into picture (gallery, title, creation_date) values (1, 'macdo_membre', sysdate());
+
+
+insert into news (author, title, creation_date, content) 
+values 
+( 'Svan', 'Macdo !', sysdate(), '
+<p>
+Une petite news pour signaler l''intégration officiel de Macdo comme membre de la BSMT après avoir terminer sa période en tant que postulant.      
+</p>
+<p>
+La bsmt est fier de le compter dans ses rangs et espére que ce sera le cas le plus longtemps possible !   
+</p>
+<p>
+Encore félicitation et à bientôt sur le terrain ma poule !   
+</p>
+<img alt="macdo" src="api/gallery/1/picture/macdo_membre" class="thumbnail img-rounded img-responsive" />
+');
