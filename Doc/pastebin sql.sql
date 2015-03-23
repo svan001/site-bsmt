@@ -58,5 +58,5 @@ La bsmt est fier de le compter dans ses rangs et espére que ce sera le cas le p
 <p>
 Encore félicitation et à bientôt sur le terrain ma poule !   
 </p>
-<img alt="macdo" src="api/gallery/1/picture/macdo_membre" class="thumbnail img-rounded img-responsive" />
+<img alt="macdo" src="api/gallery/1/picture/macdo_membre" class="thumbnail img-rounded" height="300"/>
 ');
