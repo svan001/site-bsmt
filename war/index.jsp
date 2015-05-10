@@ -21,6 +21,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+
 <%if(System.getProperty("ENV").equals("DEV")) {%> 
 <script src="angular/angular.js"></script>
 <script src="angular/angular-resource.js"></script>
@@ -28,6 +30,8 @@
 <script src="angular/angular-animate.js"></script>
 <script src="angular/angular-sanitize.js"></script>
 <%} else { %>
+<script src="g_analytics.js"></script>
+
 <script src="angular/angular.min.js"></script>
 <script src="angular/angular-resource.min.js"></script>
 <script src="angular/angular-route.min.js"></script>
