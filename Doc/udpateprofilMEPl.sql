@@ -53,7 +53,7 @@ where nick_name = 'zlatan';
 
 -- 25 12
 
-insert into gallery (title, creation_date) values ('Divers', sysdate());
+insert into gallery (id, title, creation_date) values (4, 'Divers', sysdate());
 insert into picture (gallery, title, creation_date) values (4, 'magfeed', sysdate());
 
 
@@ -72,7 +72,7 @@ On vous laisse avec une petite prise de vue de l''arsenal de la team, on approch
 
 
 
-insert into gallery (title, creation_date) values ('Op Hiver Rude', sysdate());
+insert into gallery (id, title, creation_date) values (5, 'Op Hiver Rude', sysdate());
 
 
 insert into picture (gallery, title, creation_date) values (5, 'assault', sysdate());
