@@ -13,24 +13,24 @@
  */
 
 -- Gallerie
-insert into gallery (id, title, creation_date) values (__IDG__, '__TITLE_GALLERY__', sysdate());
+INSERT INTO gallery (id, title, creation_date) VALUES (__IDG__, '__TITLE_GALLERY__', sysdate());
 
 -- Pictures
-insert into picture (gallery, title, creation_date) values (__IDG__, '', sysdate());
-insert into picture (gallery, title, creation_date) values (__IDG__, '', sysdate());
-insert into picture (gallery, title, creation_date) values (__IDG__, '', sysdate());
-insert into picture (gallery, title, creation_date) values (__IDG__, '', sysdate());
-insert into picture (gallery, title, creation_date) values (__IDG__, '', sysdate());
-insert into picture (gallery, title, creation_date) values (__IDG__, '', sysdate());
-insert into picture (gallery, title, creation_date) values (__IDG__, '', sysdate());
+INSERT INTO picture (gallery, title, creation_date) VALUES (__IDG__, '', sysdate());
+INSERT INTO picture (gallery, title, creation_date) VALUES (__IDG__, '', sysdate());
+INSERT INTO picture (gallery, title, creation_date) VALUES (__IDG__, '', sysdate());
+INSERT INTO picture (gallery, title, creation_date) VALUES (__IDG__, '', sysdate());
+INSERT INTO picture (gallery, title, creation_date) VALUES (__IDG__, '', sysdate());
+INSERT INTO picture (gallery, title, creation_date) VALUES (__IDG__, '', sysdate());
+INSERT INTO picture (gallery, title, creation_date) VALUES (__IDG__, '', sysdate());
 
 --NEWS
-insert into news 
+INSERT INTO news 
 (	author,
 	title, 
 	creation_date, 
 	content) 
-values 
+VALUES 
 (	'Soldier', 
 	'__TITLE_NEWS__', 
 	sysdate(), 

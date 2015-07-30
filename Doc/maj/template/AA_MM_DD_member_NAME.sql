@@ -3,7 +3,7 @@
  */
 
 -- Member
-insert into team_member 
+INSERT INTO team_member 
 (	nick_name,
 	forname, 
 	sexe, 
@@ -17,7 +17,7 @@ insert into team_member
 	membership_date, 
 	creation_date
 	) 
-values (
+VALUES (
 'predateur',
 'Jean charles', 
 'M', -- M ou F
