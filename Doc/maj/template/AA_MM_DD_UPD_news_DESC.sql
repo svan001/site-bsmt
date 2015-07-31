@@ -10,5 +10,7 @@ SET
 -- creation_date = '', 
 -- content = '' 
 WHERE 
-	id = ;
+	-- id = 
+	-- title = '' 
+	;
 
