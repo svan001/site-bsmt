@@ -31,9 +31,8 @@ bsmtApp.config([ '$routeProvider', function($routeProvider) {
 		controller : 'showGalleryCtrl'
 	}).otherwise({
 		redirectTo : '/home'
-	})
-
-	;
+	});
+	
 } ]);
 
 // block run pour gestion des animation entre route
