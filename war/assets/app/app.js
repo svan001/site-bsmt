@@ -6,7 +6,7 @@ var bsmtApp = angular.module('bsmtApp', [ 'ngRoute', 'ngAnimate',
 		'memberModule', 'recrutementModule', 'galleryModule' ]);
 
 // CONFIG ROUTE
-bsmtApp.config([ '$routeProvider', function($routeProvider) {
+bsmtApp.config([ '$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 
 	$routeProvider.when('/home', {
 		templateUrl : 'app/home/home.html',
@@ -33,6 +33,8 @@ bsmtApp.config([ '$routeProvider', function($routeProvider) {
 		redirectTo : '/home'
 	});
 	
+	// Active le mode HTML5 pour les URL et l'indexation google
+	$locationProvider.html5Mode(true);
 } ]);
 
 // block run pour gestion des animation entre route
