@@ -8,6 +8,11 @@
 <meta name="author" content="">
 <link rel="icon" href="../../favicon.ico">
 
+<%if("DEV".equals(System.getProperty("ENV"))) {%> 
+<base href="/bootstrap-mvc/">
+<%} else { %>
+<base href="/site/">
+<%} %>
 <title>Black Shark Milsim Team</title>
 
 <!-- CSS -->
