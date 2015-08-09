@@ -12,7 +12,13 @@
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
-
+	<!-- Redirige vers la page d'aceuil en cas de 404 (pratique pour angular 
+		en mode html5ou il faut rediriger toute les url vers la page de depart -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/index.jsp</location>
+	</error-page> 
+	
 	<!-- Param Hibernate/JPA
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
