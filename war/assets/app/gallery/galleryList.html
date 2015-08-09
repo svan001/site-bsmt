@@ -6,7 +6,7 @@
 		<div ng-repeat="gallery in listGallery"
 			class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
 			<h4 class="text-capitalize">{{gallery.title}}</h4>
-			<a href="#/gallery/{{gallery.id}}"> <img
+			<a href="gallery/{{gallery.id}}"> <img
 				ng-src="api/gallery/{{gallery.id}}/picture/thumbnail"
 				alt="Gallery{{gallery.id}}" src=""
 				class="thumbnail img-rounded img-responsive" />

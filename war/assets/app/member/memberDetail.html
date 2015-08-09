@@ -6,7 +6,7 @@
 		<h2 class="text-capitalize"
 			ng-class="{'postulantNickName' : teamMember.status == 'P', 'memberNickName' : teamMember.status == 'M', 'leaderNickName' : teamMember.status == 'L', 'veteranNickName' : teamMember.status == 'V' || teamMember.status == 'A'}">
 
-			<a href="#/member" class="btn btn-link"> <span
+			<a href="member" class="btn btn-link"> <span
 				class="retourButton glyphicon glyphicon glyphicon-circle-arrow-left"
 				aria-hidden="true"></span>
 			</a> {{teamMember.nickName}} <span ng-if="teamMember.departureDate !== null">(Depart

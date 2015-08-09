@@ -31,27 +31,27 @@
 						class="icon-bar"></span> <span class="icon-bar"></span> <span
 						class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" ng-click="selectLi('home')" href="#/home">Accueil</a>
+				<a class="navbar-brand" ng-click="selectLi('home')" href="home">Accueil</a>
 			</div>
 
 			<div id="navbarCollapse"
 				class="navbar-collapse bs-js-navbar-collapse" collapse="isCollapsed">
 				<ul class="nav navbar-nav">
 					<!-- <li ng-class="selectedLi == 'home' ? 'active' : ''"><a
-						ng-click="selectedLi = 'home'" href="#/home">Accueil</a></li> -->
+						ng-click="selectedLi = 'home'" href="home">Accueil</a></li> -->
 					<li ng-class="isCurrentView('news') ? 'active' : ''"><a
-						ng-click="selectLi('news')" href="#/news">Les news</a></li>
+						ng-click="selectLi('news')" href="news">Les news</a></li>
 					<li ng-class="isCurrentView('member') ? 'active' : ''"><a
-						ng-click="selectLi('member')" href="#/member">Les membres</a></li>
+						ng-click="selectLi('member')" href="member">Les membres</a></li>
 					<li ng-class="isCurrentView('gallery') ? 'active' : ''"><a
-						ng-click="selectLi('gallery')" href="#/gallery">La galerie</a></li>
+						ng-click="selectLi('gallery')" href="gallery">La galerie</a></li>
 					<li><a href="http://bsmt.forumactif.org/">Le forum</a></li>
 
 				</ul>
 				<ul class="nav navbar-nav pull-right">
 					<li ng-class="isCurrentView('recrutement') ? 'active' : ''"
 						class="recrutement-li"><a
-						ng-click="selectLi('recrutement')" href="#/recrutement">RECRUTEMENT</a></li>
+						ng-click="selectLi('recrutement')" href="recrutement">RECRUTEMENT</a></li>
 				</ul>
 			</div>
 		</nav>

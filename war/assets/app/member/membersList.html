@@ -13,7 +13,7 @@
 		<div ng-repeat="teamMember in teamMembers | orderBy:[statusFunctionFiler, 'nickName']"
 			class="col-lg-4 col-md-4 col-sm-6 col-xs-12 listColMember">
 			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-				<a href="#/member/{{teamMember.id}}"> <img
+				<a href="member/{{teamMember.id}}"> <img
 					ng-src="api/gallery/1/picture/{{teamMember.nickName}}?size=mini"
 					
 					alt="Photo de {{teamMember.nickName}}"
