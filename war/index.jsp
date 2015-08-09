@@ -28,7 +28,7 @@
 
 
 
-<%if(System.getProperty("ENV").equals("DEV")) {%> 
+<%if("DEV".equals(System.getProperty("ENV"))) {%> 
 <script src="angular/angular.js"></script>
 <script src="angular/angular-resource.js"></script>
 <script src="angular/angular-route.js"></script>
