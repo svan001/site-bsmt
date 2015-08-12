@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="icon" href="img/favicon.jpg">
+<link rel="icon" href="img/favicon.png">
 
 <%if("DEV".equals(System.getProperty("ENV"))) {%> 
 <base href="/bootstrap-mvc/">
