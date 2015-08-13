@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Site officiel de la Black Shark Milsim Team">
-<meta name="author" content="">
+<meta name="author" content="svan">
 <link rel="icon" href="img/favicon.png">
 
 <%if("DEV".equals(System.getProperty("ENV"))) {%> 
