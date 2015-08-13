@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Site officiel de la Black Shark Milsim Team">
 <meta name="author" content="svan">
+<meta name="keywords" content="bsmt, milsim, paintball, black shark milsim team">
 <link rel="icon" href="img/favicon.png">
 
 <%if("DEV".equals(System.getProperty("ENV"))) {%> 
