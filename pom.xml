@@ -158,7 +158,8 @@
 	</dependencies>
 
 	<build>
-		<finalName>bootstrap-mvc</finalName>
+		<!-- <finalName>bootstrap-mvc</finalName> -->
+		<finalName>site</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
