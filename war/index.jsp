@@ -9,11 +9,7 @@
 <meta name="keywords" content="bsmt, milsim, paintball, black shark milsim team">
 <link rel="icon" href="img/favicon.png">
 
-<%if("DEV".equals(System.getProperty("ENV"))) {%> 
-<base href="/bootstrap-mvc/">
-<%} else { %>
 <base href="/site/">
-<%} %>
 <title>Black Shark Milsim Team</title>
 
 <!-- CSS -->
