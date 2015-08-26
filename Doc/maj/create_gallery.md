@@ -10,4 +10,9 @@ Ex: `convert MY_IMG.jpg -resize 165x165 MY_IMG.jpg`
 
 Convert en batch
  
-* Ex : **(/!\ pas tester)** `mogrify -resize 165x165 -path ./dest *`
+* Ex : **(/!\ affiche une erreur...)** `mogrify -resize 165x165 -path ./dest *`
+
+#### Script : 
+
+Help pour créer lister les images ; `(ls -1 | sed -e 's/\..*$//' > /tmp/res_ls.txt) && gedit /tmp/res_ls.txt`
+`
