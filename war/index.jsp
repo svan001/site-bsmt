@@ -45,6 +45,8 @@
 
 <script src="bootstrap/ui-bootstrap-tpls-0.12.0.min.js"></script>
 
+
+
 <script src="app/navbar/navbarModule.js"></script>
 <script src="app/home/homeModule.js"></script>
 <script src="app/news/newsModule.js"></script>
@@ -54,6 +56,35 @@
 <script src="app/app.js"></script>
 </head>
 <body ng-app="bsmtApp">
+	 <!-- FACEBOOK :  (recommande apres le body) -->
+	 <script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : '443355159205174',
+	      xfbml      : true,
+	      version    : 'v2.4'
+	    });
+	  };
+	
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	  </script>
+      <!-- /FACEBOOK -->
+ 	 
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
 
 	<!-- header container -->
 	<div ng-include="'app/navbar/navbar.html'">
