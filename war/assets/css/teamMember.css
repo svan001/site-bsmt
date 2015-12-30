@@ -30,6 +30,7 @@
 	color: #25CC2A;
 }
 /*END Couleur des pseudos*/
+
 .profilName {
 	color: rgb(161, 161, 161);
 	text-align: center;
@@ -43,6 +44,10 @@
 
 .memberDl {
 	vertical-align: middle;
+}
+
+.memberBlockquote{
+	margin-bottom: 0px	
 }
 
 .retourButton {
