@@ -5,10 +5,10 @@ package com.svan.veilleTech.bootstrapMVC.dto.converter.impl;
 
 import org.springframework.stereotype.Component;
 
-import com.svan.fwk.dto.AbstractConverter;
 import com.svan.veilleTech.bootstrapMVC.domain.Picture;
 import com.svan.veilleTech.bootstrapMVC.dto.PictureDTO;
 import com.svan.veilleTech.bootstrapMVC.dto.converter.PictureConverter;
+import com.svan.veilleTech.bootstrapMVC.dto.converter.common.AbstractConverter;
 
 /**
  * @author stephane

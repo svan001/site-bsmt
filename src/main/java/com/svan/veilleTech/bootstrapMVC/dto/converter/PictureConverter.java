@@ -3,9 +3,9 @@
  */
 package com.svan.veilleTech.bootstrapMVC.dto.converter;
 
-import com.svan.fwk.dto.Converter;
 import com.svan.veilleTech.bootstrapMVC.domain.Picture;
 import com.svan.veilleTech.bootstrapMVC.dto.PictureDTO;
+import com.svan.veilleTech.bootstrapMVC.dto.converter.common.Converter;
 
 /**
  * @author stephane 3 janv. 2015

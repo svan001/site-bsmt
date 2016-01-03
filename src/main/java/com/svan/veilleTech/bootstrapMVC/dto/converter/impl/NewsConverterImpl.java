@@ -5,10 +5,10 @@ package com.svan.veilleTech.bootstrapMVC.dto.converter.impl;
 
 import org.springframework.stereotype.Component;
 
-import com.svan.fwk.dto.AbstractConverter;
 import com.svan.veilleTech.bootstrapMVC.domain.News;
 import com.svan.veilleTech.bootstrapMVC.dto.NewsDTO;
 import com.svan.veilleTech.bootstrapMVC.dto.converter.NewsConverter;
+import com.svan.veilleTech.bootstrapMVC.dto.converter.common.AbstractConverter;
 
 /**
  * @author stephane 6 Nov. 2014

@@ -6,11 +6,11 @@ package com.svan.veilleTech.bootstrapMVC.dto.converter.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.svan.fwk.dto.AbstractConverter;
 import com.svan.veilleTech.bootstrapMVC.domain.Gallery;
 import com.svan.veilleTech.bootstrapMVC.dto.GalleryDTO;
 import com.svan.veilleTech.bootstrapMVC.dto.converter.GalleryConverter;
 import com.svan.veilleTech.bootstrapMVC.dto.converter.PictureConverter;
+import com.svan.veilleTech.bootstrapMVC.dto.converter.common.AbstractConverter;
 
 /**
  * @author stephane

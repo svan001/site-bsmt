@@ -7,10 +7,10 @@ package com.svan.veilleTech.bootstrapMVC.dto.converter.impl;
 
 import org.springframework.stereotype.Component;
 
-import com.svan.fwk.dto.AbstractConverter;
 import com.svan.veilleTech.bootstrapMVC.domain.TeamMember;
 import com.svan.veilleTech.bootstrapMVC.dto.TeamMemberDTO;
 import com.svan.veilleTech.bootstrapMVC.dto.converter.TeamMemberConverter;
+import com.svan.veilleTech.bootstrapMVC.dto.converter.common.AbstractConverter;
 
 /**
  * 

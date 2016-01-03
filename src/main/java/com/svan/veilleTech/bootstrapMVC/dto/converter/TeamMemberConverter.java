@@ -5,9 +5,9 @@
  */
 package com.svan.veilleTech.bootstrapMVC.dto.converter;
 
-import com.svan.fwk.dto.Converter;
 import com.svan.veilleTech.bootstrapMVC.domain.TeamMember;
 import com.svan.veilleTech.bootstrapMVC.dto.TeamMemberDTO;
+import com.svan.veilleTech.bootstrapMVC.dto.converter.common.Converter;
 
 /**
  * 
