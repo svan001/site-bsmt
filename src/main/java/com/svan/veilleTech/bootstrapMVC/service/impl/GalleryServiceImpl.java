@@ -17,7 +17,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.svan.fwk.service.AbstractService;
 import com.svan.veilleTech.bootstrapMVC.dao.GalleryDao;
 import com.svan.veilleTech.bootstrapMVC.dto.GalleryDTO;
 import com.svan.veilleTech.bootstrapMVC.dto.converter.GalleryConverter;
@@ -30,8 +29,7 @@ import com.svan.veilleTech.bootstrapMVC.service.GalleryService;
  */
 @Service
 @Transactional
-public class GalleryServiceImpl extends AbstractService implements
-		GalleryService {
+public class GalleryServiceImpl implements GalleryService {
 
 	private static final String IMG_DIR = System.getProperty("IMG_DIR") != null ? System
 			.getProperty("IMG_DIR") : "/var/www/img";

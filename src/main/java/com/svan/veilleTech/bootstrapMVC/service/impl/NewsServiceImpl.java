@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.svan.fwk.service.AbstractService;
 import com.svan.veilleTech.bootstrapMVC.dao.NewsDao;
 import com.svan.veilleTech.bootstrapMVC.domain.News;
 import com.svan.veilleTech.bootstrapMVC.dto.NewsDTO;
@@ -27,7 +26,7 @@ import com.svan.veilleTech.bootstrapMVC.service.NewsService;
  */
 @Service
 @Transactional
-public class NewsServiceImpl extends AbstractService implements NewsService {
+public class NewsServiceImpl implements NewsService {
 
 	private static final int DEFAULT_GET_LAST_NEWS_MAX_RESULT = 20;
 

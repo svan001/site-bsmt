@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.svan.fwk.service.AbstractService;
 import com.svan.veilleTech.bootstrapMVC.dao.TeamMemberDao;
 import com.svan.veilleTech.bootstrapMVC.dto.TeamMemberDTO;
 import com.svan.veilleTech.bootstrapMVC.dto.converter.TeamMemberConverter;
@@ -26,7 +25,7 @@ import com.svan.veilleTech.bootstrapMVC.service.TeamMemberService;
  */
 @Service
 @Transactional
-public class TeamMemberServiceImpl extends AbstractService implements TeamMemberService {
+public class TeamMemberServiceImpl implements TeamMemberService {
 
 	@Autowired
 	private TeamMemberDao teamMemberDao;
