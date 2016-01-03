@@ -129,12 +129,14 @@
 		</dependency>
 
 		<!-- FWK -->
+		<!-- Issue 50 (03/01/2016) : (quasi) useless (en 216) et très casse couille a l'install
 		<dependency>
 			<groupId>com.svan.fwk</groupId>
 			<artifactId>svanFWK</artifactId>
 			<version>0.0.3</version>
 		</dependency>
-
+		-->
+		
 		<!-- OTHER -->
 		<dependency>
 			<groupId>commons-io</groupId>
