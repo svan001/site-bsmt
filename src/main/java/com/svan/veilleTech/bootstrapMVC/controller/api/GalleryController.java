@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.AbstractController;
 
-import com.svan.fwk.controller.AbstractController;
 import com.svan.veilleTech.bootstrapMVC.dto.GalleryDTO;
 import com.svan.veilleTech.bootstrapMVC.service.GalleryService;
 
@@ -28,7 +28,7 @@ import com.svan.veilleTech.bootstrapMVC.service.GalleryService;
  */
 @Controller
 @RequestMapping("/api/gallery")
-public class GalleryController extends AbstractController {
+public class GalleryController{
 
 	private Logger LOGGER = Logger.getLogger(GalleryController.class);
 
