@@ -5,8 +5,7 @@ package com.svan.veilleTech.bootstrapMVC.dao;
 
 import java.util.List;
 
-import com.svan.fwk.dao.FwkDao;
-import com.svan.veilleTech.bootstrapMVC.domain.Article;
+import com.svan.veilleTech.bootstrapMVC.dao.common.FwkDao;
 import com.svan.veilleTech.bootstrapMVC.domain.News;
 
 /**

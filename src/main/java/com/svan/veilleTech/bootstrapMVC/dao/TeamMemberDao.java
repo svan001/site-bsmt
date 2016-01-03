@@ -5,7 +5,7 @@
  */
 package com.svan.veilleTech.bootstrapMVC.dao;
 
-import com.svan.fwk.dao.FwkDao;
+import com.svan.veilleTech.bootstrapMVC.dao.common.FwkDao;
 import com.svan.veilleTech.bootstrapMVC.domain.TeamMember;
 
 /**

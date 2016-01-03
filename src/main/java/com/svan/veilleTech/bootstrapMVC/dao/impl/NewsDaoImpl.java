@@ -11,8 +11,8 @@ import javax.persistence.TypedQuery;
 
 import org.springframework.stereotype.Repository;
 
-import com.svan.fwk.dao.AbstractFwkDao;
 import com.svan.veilleTech.bootstrapMVC.dao.NewsDao;
+import com.svan.veilleTech.bootstrapMVC.dao.common.AbstractFwkDao;
 import com.svan.veilleTech.bootstrapMVC.domain.News;
 
 /**

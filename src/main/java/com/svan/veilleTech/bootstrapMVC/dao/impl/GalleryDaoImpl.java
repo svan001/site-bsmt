@@ -8,8 +8,8 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
 
-import com.svan.fwk.dao.AbstractFwkDao;
 import com.svan.veilleTech.bootstrapMVC.dao.GalleryDao;
+import com.svan.veilleTech.bootstrapMVC.dao.common.AbstractFwkDao;
 import com.svan.veilleTech.bootstrapMVC.domain.Gallery;
 
 /**
