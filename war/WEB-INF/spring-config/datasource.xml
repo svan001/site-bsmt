@@ -5,12 +5,12 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd" >
 
-	<jee:jndi-lookup id="bootstrap_ds_id" jndi-name="jdbc/bootstrap_ds" />
+	<jee:jndi-lookup id="site_ds_id" jndi-name="jdbc/site_ds" />
 
 
 	<bean
 		class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor">
-		<property name="defaultPersistenceUnitName" value="bootstrap-pu" />
+		<property name="defaultPersistenceUnitName" value="site-pu" />
 	</bean>
 
 	<bean id="persistenceUnitManager"
@@ -22,7 +22,7 @@
 		</property>
 		<property name="dataSources">
 			<map>
-				<entry key="bootstrap-ds" value-ref="bootstrap_ds_id" />
+				<entry key="site-ds" value-ref="site_ds_id" />
 			</map>
 		</property>
 	</bean>

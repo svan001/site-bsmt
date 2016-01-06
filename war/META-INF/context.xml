@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
-	<ResourceLink name="jdbc/bootstrap_ds" global="jdbc/bootstrap_ds" />
+	<!-- ressource :	nom_local 			  nom_serveur_tomcat -->
+	<ResourceLink name="jdbc/site_ds" global="jdbc/bootstrap_ds" />
 </Context>
