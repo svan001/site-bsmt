@@ -28,7 +28,7 @@
 <!-- Postgres -->
 <Resource auth="Container" 
 	driverClassName="org.postgresql.Driver" maxActive="20" maxIdle="10" maxWait="-1" 
-	name="jdbc/bootstrap_ds" 
+	name="jdbc/site_bsmt_ds" 
 	username="bootstrap"
 	password="bootstrap" 
 	type="javax.sql.DataSource" 
@@ -36,7 +36,7 @@
 	/>
 
 <!-- MariaDB -->
-<Resource name="jdbc/bootstrap_ds" auth="Container" type="javax.sql.DataSource"
+<Resource name="jdbc/site_bsmt_ds" auth="Container" type="javax.sql.DataSource"
            maxActive="50" maxIdle="30" maxWait="10000"
            username="bootstrap" password="bootstrap" 
            driverClassName="com.mysql.jdbc.Driver"
