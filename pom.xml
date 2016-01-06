@@ -106,14 +106,19 @@
 		</dependency>
  		-->
  
-		<!-- Hibernate -->
+ 		<!-- BASE DE DONNEES  -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>4.1.9.Final</version>
 		</dependency>
+ 		<dependency>
+		    <groupId>org.flywaydb</groupId>
+		    <artifactId>flyway-core</artifactId>
+		    <version>3.2.1</version>
+		</dependency>
 
-		<!-- Postgres -->
+		<!-- Postgres (abondonnées pour mariaDB)-->
 		<!-- Linux -->
 		<!-- <dependency> <groupId>org.postgresql</groupId> <artifactId>postgresql</artifactId> 
 			<version>9.3-1100-jdbc41</version> </dependency> -->
@@ -127,6 +132,8 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.34</version>
 		</dependency>
+		<!-- // BASE DE DONNEES  -->
+		
 
 		<!-- FWK -->
 		<!-- Issue 50 (03/01/2016) : (quasi) useless (en 216) et très casse couille a l'install
