@@ -17,7 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.svan.veille.site.bsmt.dao.GalleryDao;
+import com.svan.veille.site.bsmt.dao.jpa.GalleryDao;
 import com.svan.veille.site.bsmt.dto.GalleryDTO;
 import com.svan.veille.site.bsmt.dto.converter.GalleryConverter;
 import com.svan.veille.site.bsmt.service.GalleryService;
@@ -49,7 +49,7 @@ public class GalleryServiceImpl implements GalleryService {
 
 	@Override
 	public GalleryDTO getById(Long id) {
-		return converter.toDest(galleryDao.findByPk(id));
+		return converter.toDest(galleryDao.findOne(id));
 	}
 
 	@Override

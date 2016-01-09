@@ -8,10 +8,11 @@ package com.svan.veille.site.bsmt.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.svan.veille.site.bsmt.dao.NewsDao;
+import com.svan.veille.site.bsmt.dao.jpa.NewsDao;
 import com.svan.veille.site.bsmt.domain.News;
 import com.svan.veille.site.bsmt.dto.NewsDTO;
 import com.svan.veille.site.bsmt.dto.converter.NewsConverter;
@@ -42,7 +43,8 @@ public class NewsServiceImpl implements NewsService {
 			limit = DEFAULT_GET_LAST_NEWS_MAX_RESULT;
 		}
 
-		return converter.toDest(newsDao.getLastNews(limit));
+		return converter.toDest(newsDao
+				.findByOrderByCreationDateDesc(new PageRequest(0, limit)));
 	}
 
 	@Override
@@ -53,14 +55,14 @@ public class NewsServiceImpl implements NewsService {
 		news.setAuthor(newsDTO.getAuthor());
 		news.setContent(newsDTO.getContent());
 
-		newsDao.persist(news);
+		news = newsDao.save(news);
 
 		return converter.toDest(news);
 	}
 
 	@Override
 	public NewsDTO getById(Long id) {
-		return converter.toDest(newsDao.findByPk(id));
+		return converter.toDest(newsDao.findOne(id));
 	}
 
 }

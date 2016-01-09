@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.svan.veille.site.bsmt.dao.TeamMemberDao;
+import com.svan.veille.site.bsmt.dao.jpa.TeamMemberDao;
 import com.svan.veille.site.bsmt.dto.TeamMemberDTO;
 import com.svan.veille.site.bsmt.dto.converter.TeamMemberConverter;
 import com.svan.veille.site.bsmt.service.TeamMemberService;
@@ -40,7 +40,7 @@ public class TeamMemberServiceImpl implements TeamMemberService {
 
 	@Override
 	public TeamMemberDTO getById(Long id) {
-		return converter.toDest(teamMemberDao.findByPk(id));
+		return converter.toDest(teamMemberDao.findOne(id));
 	}
 
 }
