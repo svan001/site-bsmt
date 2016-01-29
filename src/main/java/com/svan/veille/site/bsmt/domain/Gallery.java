@@ -34,6 +34,12 @@ public class Gallery {
 	@Column(name = "title", nullable = false, length = 255)
 	private String title;
 
+	@Column(name = "description", nullable = false, length = 3000)
+	private String description;
+
+	@Column(name = "source", length = 255)
+	private String source;
+
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "gallery")
 	private List<Picture> pictures;
 
@@ -116,6 +122,22 @@ public class Gallery {
 	 */
 	public void setPictures(List<Picture> pictures) {
 		this.pictures = pictures;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
 	}
 
 }

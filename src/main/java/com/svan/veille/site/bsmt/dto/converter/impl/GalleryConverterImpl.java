@@ -29,7 +29,9 @@ public class GalleryConverterImpl extends
 
 		dto.setId(entity.getId());
 		dto.setTitle(entity.getTitle());
-
+		dto.setDescription(entity.getDescription());
+		dto.setSource(entity.getSource());
+		
 		dto.setPictures(pictureConverter.toDest(entity.getPictures()));
 
 		dto.setCreationDate(entity.getCreationDate());

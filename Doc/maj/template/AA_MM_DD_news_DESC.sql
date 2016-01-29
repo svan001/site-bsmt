@@ -5,7 +5,9 @@
  * 2. __IDG__ : ID de la gallery (last + 1)
  * 3. __TITLE_GALLERY__ : titre de la gallery
  * 4. __MAIN_PICTURE__ : photo présente en fin de news
- * 5. Compléter la news
+ * 5. Compléter la __DESCRIPTION_GALERY__ et  __SOURCE_GALERY__ si une source a remercier
+ * 6. Compléter les pictures
+ * 7. Compléter la news
  */
 
 /**
@@ -13,7 +15,7 @@
  */
 
 -- Gallerie
-INSERT INTO gallery (id, title, creation_date) VALUES (__IDG__, '__TITLE_GALLERY__', sysdate());
+INSERT INTO gallery (id, title, description, source, creation_date) VALUES (__IDG__, '__TITLE_GALLERY__', '__DESCRIPTION_GALERY__', '__SOURCE_GALERY__', sysdate());
 
 -- Pictures
 INSERT INTO picture (gallery, title, creation_date) VALUES (__IDG__, '', sysdate());
