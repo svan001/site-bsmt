@@ -11,7 +11,6 @@
 	border-top-color: white;
 	border-top-width: 1px;
 	
-	
 	padding-top: 10px;
 	padding-bottom: 10px;
 	}
@@ -19,7 +18,7 @@
 .newsContent {
 	color: #5e5e5e;
 	font-size: 16px;
-	}
+}
 
 .newsAuthor {
 	color: rgb(161, 161, 161);
@@ -27,5 +26,4 @@
 	
 	padding-top: 10px;
 	padding-bottom: 10px;
-		
 }
