@@ -16,6 +16,7 @@
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
 
+<!-- TODO : to suppr ?? issue 68 -->
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -23,48 +24,32 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
-<!-- 1.5.0 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-resource.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.min.js"></script>
--->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.min.js"></script>
-
-
-<%if("DEV".equals(System.getProperty("ENV"))) {%> 
-<!-- PRE CDN 
-
+<%if("DEV".equals(System.getProperty("ENV"))) {%>
 <script src="angular/angular.js"></script>
 <script src="angular/angular-resource.js"></script>
 <script src="angular/angular-route.js"></script>
 <script src="angular/angular-animate.js"></script>
 <script src="angular/angular-sanitize.js"></script>
+<script src="angular/i18n/angular-locale_fr-fr.js"></script>
 
--->
 <%} else { %>
 
 <script src="g_analytics.js"></script>
 
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-resource.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.min.js"></script>
+<script src="//code.angularjs.org/1.5.0/i18n/angular-locale_fr-fr.js"></script>
 
-<!-- PRE CDN 
-<script src="angular/angular.min.js"></script>
-<script src="angular/angular-resource.min.js"></script>
-<script src="angular/angular-route.min.js"></script>
-<script src="angular/angular-animate.min.js"></script>
-<script src="angular/angular-sanitize.min.js"></script>
- -->
 <%} %>
 
-<script src="angular/i18n/angular-locale_fr-fr.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap-tpls.min.js"></script>
+<!-- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap-tpls.js"></script>
+ -->  
+<!-- Doit utiliser version patché pour carousel -->
+<script src="bootstrap/ui-bootstrap-tpls-1.1.2-PATHED.js"></script>
   
 <script src="app/navbar/navbarModule.js"></script>
 <script src="app/home/homeModule.js"></script>
