@@ -15,38 +15,49 @@ galleryModule.controller('galleryCtrl', [ '$scope', 'Gallery',
 		function($scope, Gallery) {
 			var listGallery = $scope.listGallery = Gallery.query();
 
-			// Service
-			// END Service
 		} // END CONTROLLER
 ]);
 
 // Controller Show gallery
-galleryModule.controller('showGalleryCtrl', [ '$scope', '$routeParams',
-		'Gallery', function($scope, $routeParams, Gallery) {
+galleryModule.controller('showGalleryCtrl', function($scope, $routeParams,
+		Gallery) {
+	var init = function() {
+		$scope.pictureToShow = null;
+		$scope.showModal = false;
 
-			// INIT
-			var gallery = $scope.gallery = Gallery.get({
-				id : $routeParams.idGallery
+		$scope.gallery = Gallery.get({
+			id : $routeParams.idGallery
+		}, function(res) {
+			$scope.slides = res.pictures.map(function(item) {
+				return {
+					id : item.id,
+					title : item.title,
+					active : false,
+					loaded : false
+				};
 			});
+		});
+	}
 
-			$scope.pictureToShow = null;
-			$scope.showModal = false;
-			
+	$scope.selectPicture = function(picture) {
+		$scope.pictureToShow = picture;
+		$scope.showModal = picture != null;
 
-			// Service
-			$scope.selectPicture = function(picture) {
-				$scope.pictureToShow = picture;
-				$scope.showModal = picture != null;
-			};
+		$scope.slides.find(function(item) {
+			return item.id == picture.id
+		}).active = true;
+	};
 
-			$scope.getModalPictureUrl = function() {
-				if ($scope.pictureToShow != null) {
-					return 'api/gallery/' + gallery.id + '/picture/'
-							+ $scope.pictureToShow.title;
-				} else {
-					return 'img/loading-gallery.gif';
-				}
-			};
-			// END Service
-		} // END CONTROLLER
-]);
+	$scope.getPictureUrl = function(slide) {
+		if (slide.active && !slide.loaded) {
+			slide.loaded = true;
+		}
+
+		return slide.loaded ? 'api/gallery/' + $scope.gallery.id + '/picture/'
+				+ slide.title : 'img/loading-gallery.gif';
+	};
+
+	// INIT
+	init();
+} // END CONTROLLER
+);
