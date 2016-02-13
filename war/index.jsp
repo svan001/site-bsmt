@@ -49,7 +49,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap-tpls.js"></script>
  -->  
 <!-- Doit utiliser version patché pour carousel -->
-<script src="bootstrap/ui-bootstrap-tpls-1.1.2-PATHED.js"></script>
+<script src="bootstrap/ui-bootstrap-tpls-1.1.2-PATCHED.js"></script>
   
 <script src="app/navbar/navbarModule.js"></script>
 <script src="app/home/homeModule.js"></script>
