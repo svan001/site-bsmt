@@ -25,6 +25,7 @@ galleryModule.controller('showGalleryCtrl', function($scope, $routeParams,
 		$scope.pictureToShow = null;
 		$scope.showModal = false;
 
+		// GET gallery et create slides
 		$scope.gallery = Gallery.get({
 			id : $routeParams.idGallery
 		}, function(res) {
@@ -39,20 +40,24 @@ galleryModule.controller('showGalleryCtrl', function($scope, $routeParams,
 		});
 	}
 
+	/** Selection d'une image */
 	$scope.selectPicture = function(picture) {
 		$scope.pictureToShow = picture;
 		$scope.showModal = picture != null;
 
-		$scope.slides.find(function(item) {
-			return item.id == picture.id
-		}).active = true;
+		if ($scope.showModal)
+			$scope.slides.find(function(item) {
+				return item.id == picture.id
+			}).active = true;
 	};
 
+	/** Determine l'url a utiliser pour un slide/img */
 	$scope.getPictureUrl = function(slide) {
 		if (slide.active && !slide.loaded) {
 			slide.loaded = true;
 		}
 
+		// Retourne soit la vrai url soit celle de chargement
 		return slide.loaded ? 'api/gallery/' + $scope.gallery.id + '/picture/'
 				+ slide.title : 'img/loading-gallery.gif';
 	};
