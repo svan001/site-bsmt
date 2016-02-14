@@ -1,15 +1,15 @@
 <link href="css/gallery.css" rel="stylesheet">
 
-<div class="galleryModal" ng-if="showModal" ng-click="selectPicture(null)" >
-
-	<button ng-click="selectPicture(null)">!</button>
+<div class="galleryModal" ng-show="showModal" ng-click="selectPicture(null)">
 
 	<div class="modal-dialog galleryModal-dialog">
 
-		<uib-carousel> 
+		<uib-carousel ng-click="$event.stopPropagation()"> 
+			
 			<uib-slide ng-repeat="slide in slides" active="slide.active"> 
 				<img ng-src="{{getPictureUrl(slide)}}" class="img-responsive galleryModal-img" alt="{{slide.title}}"/> 
 			</uib-slide> 
+	
 		</uib-carousel>
 	</div>
 </div>
