@@ -1,12 +1,12 @@
 'use strict';
 
 // Declare App
-var bsmtApp = angular.module('bsmtApp', [ 'ngRoute', 'ngAnimate',
+var bsmtApp = angular.module('bsmtApp', [ 'ngRoute', 'ngAnimate', 'ngTouch',
 		'ui.bootstrap', 'navbarModule', 'homeModule', 'newsModule',
 		'memberModule', 'recrutementModule', 'galleryModule' ]);
 
 // CONFIG ROUTE
-bsmtApp.config([ '$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+bsmtApp.config(function($routeProvider, $locationProvider) {
 
 	$routeProvider.when('/home', {
 		templateUrl : 'app/home/home.html',
@@ -32,12 +32,12 @@ bsmtApp.config([ '$routeProvider', '$locationProvider', function($routeProvider,
 	}).otherwise({
 		redirectTo : '/home'
 	});
-	
+
 	// Active le mode HTML5 pour les URL et l'indexation google
 	$locationProvider.html5Mode(true);
-} ]);
+});
 
-// block run pour gestion des animation entre route
+// Block run pour gestion des animations entre route
 bsmtApp.run(function($location, $rootScope) {
 	$rootScope.$on('$routeChangeStart', function() {
 		if (/^\/member\/[0-9]*$/.test($location.path())

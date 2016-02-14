@@ -25,11 +25,14 @@
     <![endif]-->
 
 <%if("DEV".equals(System.getProperty("ENV"))) {%>
+
 <script src="angular/angular.js"></script>
 <script src="angular/angular-resource.js"></script>
 <script src="angular/angular-route.js"></script>
 <script src="angular/angular-animate.js"></script>
 <script src="angular/angular-sanitize.js"></script>
+<script src="angular/angular-touch.js"></script>
+
 <script src="angular/i18n/angular-locale_fr-fr.js"></script>
 
 <%} else { %>
@@ -41,6 +44,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.min.js"></script>
+
 <script src="//code.angularjs.org/1.5.0/i18n/angular-locale_fr-fr.js"></script>
 
 <%} %>
