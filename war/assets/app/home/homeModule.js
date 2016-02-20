@@ -1,13 +1,12 @@
-'use strict';
+(function() {
+	'use strict';
 
-// Declare module
-var homeModule = angular.module('homeModule', []);
+	// Declare module
+	var homeModule = angular.module('homeModule', []);
 
-// Controller
-homeModule.controller('homeCtrl', [ '$scope',
+	// Controller
+	homeModule.controller('homeCtrl', function($scope) {
 
-function($scope) {
-
-}// END CONTROLLER
-
-]);
+	}// END CONTROLLER
+	);
+})();

@@ -1,13 +1,13 @@
-'use strict';
+(function() {
+	'use strict';
 
-// Declare module
-var recrutementModule = angular.module('recrutementModule', []);
+	// Declare module
+	var recrutementModule = angular.module('recrutementModule', []);
 
-// Controller
-recrutementModule.controller('recrutementCtrl', [ '$scope',
+	// Controller
+	recrutementModule.controller('recrutementCtrl', function($scope) {
 
-function($scope) {
+	}// END CONTROLLER
 
-}// END CONTROLLER
-
-]);
+	);
+})();
