@@ -24,8 +24,7 @@
 	// *******************************************
 	// Controller Show gallery
 	// *******************************************
-	galleryModule.controller('showGalleryCtrl', function($scope, $routeParams,
-			Gallery) {
+	galleryModule.controller('showGalleryCtrl', function($scope, $routeParams, Gallery) {
 		/** Init function */
 		var init = function() {
 			$scope.showModal = false;
@@ -66,8 +65,8 @@
 			}
 
 			// Retourne soit la vrai url soit celle de chargement
-			return slide.loaded ? 'api/gallery/' + $scope.gallery.id
-					+ '/picture/' + slide.title : 'img/loading-gallery.gif';
+			return slide.loaded ? 'api/gallery/' + $scope.gallery.id + '/picture/' + slide.title
+					: 'img/loading-gallery.gif';
 		};
 
 		// INIT
