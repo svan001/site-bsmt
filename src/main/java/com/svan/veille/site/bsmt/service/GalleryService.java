@@ -5,7 +5,7 @@
  */
 package com.svan.veille.site.bsmt.service;
 
-import java.io.FileNotFoundException;
+import java.io.File;
 import java.io.InputStream;
 import java.util.List;
 
@@ -41,8 +41,6 @@ public interface GalleryService {
 	 * @param pictureName
 	 * @param size
 	 * @return
-	 * @throws FileNotFoundException
 	 */
-	public InputStream getPictureStream(Long idGallery, String pictureName,
-			String size) throws FileNotFoundException;
+	public File getPictureFile(Long idGallery, String pictureName, String size);
 }

@@ -7,9 +7,6 @@ package com.svan.veille.site.bsmt.service.impl;
 
 import java.io.File;
 import java.io.FileFilter;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
 import java.util.List;
 
 import org.apache.commons.io.filefilter.RegexFileFilter;
@@ -31,8 +28,8 @@ import com.svan.veille.site.bsmt.service.GalleryService;
 @Transactional
 public class GalleryServiceImpl implements GalleryService {
 
-	private static final String IMG_DIR = System.getProperty("IMG_DIR") != null ? System
-			.getProperty("IMG_DIR") : "/var/www/img";
+	private static final String IMG_DIR = System.getProperty("IMG_DIR") != null ? System.getProperty("IMG_DIR")
+			: "/var/www/img";
 
 	private static final String DEFAULT_EXTENSION = "jpg";
 
@@ -53,17 +50,14 @@ public class GalleryServiceImpl implements GalleryService {
 	}
 
 	@Override
-	public InputStream getPictureStream(Long idGallery, String pictureName,
-			String size) throws FileNotFoundException {
+	public File getPictureFile(Long idGallery, String pictureName, String size) {
 		// Cible : IMG_DIR / galleries / ID / SIZE / picture . * (défaut "jpg")
 		String sizePath = size == null ? "" : size;
 
-		File directory = new File(IMG_DIR + File.separatorChar + "galleries"
-				+ File.separatorChar + idGallery + File.separatorChar
-				+ sizePath);
+		File directory = new File(IMG_DIR + File.separatorChar + "galleries" + File.separatorChar + idGallery
+				+ File.separatorChar + sizePath);
 
-		File imgFile = new File(directory, pictureName + "."
-				+ DEFAULT_EXTENSION);
+		File imgFile = new File(directory, pictureName + "." + DEFAULT_EXTENSION);
 
 		// Gere le JPG par defaut, cherche autre extension si besoin
 		if (!imgFile.exists()) {
@@ -71,6 +65,6 @@ public class GalleryServiceImpl implements GalleryService {
 			imgFile = directory.listFiles(filter)[0];
 		}
 
-		return new FileInputStream(imgFile);
+		return imgFile;
 	}
 }

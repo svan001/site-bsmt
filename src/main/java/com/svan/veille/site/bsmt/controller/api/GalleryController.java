@@ -3,7 +3,11 @@
  */
 package com.svan.veille.site.bsmt.controller.api;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
@@ -27,7 +31,7 @@ import com.svan.veille.site.bsmt.service.GalleryService;
  */
 @Controller
 @RequestMapping("/api/gallery")
-public class GalleryController{
+public class GalleryController {
 
 	private Logger LOGGER = Logger.getLogger(GalleryController.class);
 
@@ -48,17 +52,24 @@ public class GalleryController{
 
 	@RequestMapping(value = "/{idGallery}/picture/{pictureName}", method = RequestMethod.GET)
 	@ResponseBody
-	public void getById(@PathVariable Long idGallery,
-			@PathVariable String pictureName,
-			@RequestParam(required = false) String size,
-			HttpServletResponse response) {
+	public void getPicture(@PathVariable Long idGallery, @PathVariable String pictureName,
+			@RequestParam(required = false) String size, HttpServletResponse response) {
+		// File
+		File imgFile = galleryService.getPictureFile(idGallery, pictureName, size);
 
+		// Cache
+		Calendar expireDate = GregorianCalendar.getInstance();
+		expireDate.add(Calendar.WEEK_OF_YEAR, 1);
+		response.addDateHeader("Expires", expireDate.getTimeInMillis());
+
+		response.addDateHeader("Last-Modified", imgFile.lastModified());
+
+		// Content
 		try {
-			InputStream in = galleryService.getPictureStream(idGallery,
-					pictureName, size);
+			InputStream in = new FileInputStream(imgFile);
 			IOUtils.copy(in, response.getOutputStream());
 		} catch (Exception e) {
-			LOGGER.error("Error get picture", e);
+			LOGGER.error("Error get picture : gallery : " + idGallery + " ; picture : " + pictureName, e);
 		}
 	}
 }
