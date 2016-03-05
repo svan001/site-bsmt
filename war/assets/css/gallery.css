@@ -16,6 +16,10 @@
 	font-size: 30px;
 }
 
+.vignette-gallery h4{
+	height: 2em;
+}
+
 /*GALLERIE MODAL*/
 .galleryModal {
 	position: fixed;
