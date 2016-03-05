@@ -18,6 +18,7 @@
 
 <%if("DEV".equals(System.getProperty("ENV"))) {%>
 
+<!-- <<< AngularJS -->  
 <script src="angular/angular.js"></script>
 <script src="angular/angular-resource.js"></script>
 <script src="angular/angular-route.js"></script>
@@ -26,11 +27,13 @@
 <script src="angular/angular-touch.js"></script>
 
 <script src="angular/i18n/angular-locale_fr-fr.js"></script>
+<!-- >>> AngularJS -->  
 
 <%} else { %>
 
 <script src="g_analytics.js"></script>
 
+<!-- <<< AngularJS -->  
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-resource.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js"></script>
@@ -39,7 +42,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.min.js"></script>
 
 <script src="//code.angularjs.org/1.5.0/i18n/angular-locale_fr-fr.js"></script>
-
+<!-- >>> AngularJS -->  
 <%} %>
 
 <!-- 
@@ -48,6 +51,7 @@
 <!-- Doit utiliser version patché pour carousel -->
 <script src="bootstrap/ui-bootstrap-tpls-1.1.2-PATCHED.js"></script>
   
+<!-- <<< Script app angular -->  
 <script src="app/navbar/navbarModule.js"></script>
 <script src="app/home/homeModule.js"></script>
 <script src="app/news/newsModule.js"></script>
@@ -55,6 +59,8 @@
 <script src="app/recrutement/recrutementModule.js"></script>
 <script src="app/gallery/galleryModule.js"></script>
 <script src="app/app.js"></script>
+<!-- >>> Script app angular -->  
+
 </head>
 <body ng-app="bsmtApp">
 
