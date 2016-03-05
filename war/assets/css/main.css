@@ -33,9 +33,11 @@ footer {
 }
 
 .slide {
-	top: 0px;
 	position: absolute;
-	width: 100%;
+    top: 0px;
+    /* simule le container */
+    right: 15px;
+    left: 15px;
 }
 
 .slide.ng-enter,.slide.ng-leave {

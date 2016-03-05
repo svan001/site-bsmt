@@ -14,7 +14,7 @@
 
 <!-- CSS -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
+<link href="css/main.css?v=3" rel="stylesheet">
 
 <%if("DEV".equals(System.getProperty("ENV"))) {%>
 
