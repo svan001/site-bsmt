@@ -4,10 +4,10 @@
 
 	<div class="modal-dialog galleryModal-dialog">
 
-		<uib-carousel ng-click="$event.stopPropagation()"> 
+		<uib-carousel active="activeSlideIndex" ng-click="$event.stopPropagation()"> 
 			
-			<uib-slide ng-repeat="slide in slides" active="slide.active"> 
-				<img ng-src="{{getPictureUrl(slide)}}" class="img-responsive galleryModal-img" alt="{{slide.title}}"/> 
+			<uib-slide ng-repeat="slide in slides" index="slide.index"> 
+				<img ng-src="{{getPictureUrl(slide)}}" class="img-responsive galleryModal-img" alt="{{slide.picture.title}}"/> 
 			</uib-slide> 
 	
 		</uib-carousel>

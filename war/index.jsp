@@ -48,8 +48,8 @@
 <!-- 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap-tpls.js"></script>
  -->  
-<!-- Doit utiliser version patché pour carousel -->
-<script src="bootstrap/ui-bootstrap-tpls-1.1.2-PATCHED.js"></script>
+ <!-- TODO CDN ?? -->
+<script src="bootstrap/ui-bootstrap-tpls-1.2.5.js"></script>
   
 <!-- <<< Script app angular -->  
 <script src="app/navbar/navbarModule.js"></script>
