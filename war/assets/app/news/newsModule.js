@@ -15,7 +15,7 @@
 	module.controller('newsCtrl', function($scope, $sce, News) {
 		// Init
 		News.query({
-			limit : 10
+			limit : 15
 		}).$promise.then(function(res) {
 			// Trust le contenue des news et maj scope
 			res.forEach(function(item) {
