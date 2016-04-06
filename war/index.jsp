@@ -44,12 +44,11 @@
 <script src="//code.angularjs.org/1.5.0/i18n/angular-locale_fr-fr.js"></script>
 <!-- >>> AngularJS -->  
 <%} %>
-
-<!-- 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap-tpls.js"></script>
- -->  
- <!-- TODO CDN ?? -->
-<script src="bootstrap/ui-bootstrap-tpls-1.2.5.js"></script>
+<!-- CDN ??
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.1/ui-bootstrap-tpls.min.js"></script>
+ --> 
+<script src="bootstrap/ui-bootstrap-tpls.min.js"></script>
+ 
   
 <!-- <<< Script app angular -->  
 <script src="app/navbar/navbarModule.js"></script>
