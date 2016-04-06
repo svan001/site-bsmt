@@ -2,21 +2,29 @@
 	'use strict';
 
 	// Declare module
-	var newsModule = angular.module('newsModule', [ 'ngResource', 'ngSanitize' ]);
+	var module = angular.module('newsModule', [ 'ngResource', 'ngSanitize' ]);
 
-	newsModule.factory('News', function($resource) {
+	// Service/resource
+	module.factory('News', function($resource) {
 		return $resource('api/news/:id/', {
 			id : '@id'
 		});
 	});
 
 	// Controller
-	newsModule.controller('newsCtrl', function($scope, News) {
+	module.controller('newsCtrl', function($scope, $sce, News) {
 		// Init
-		var listNews = $scope.listNews = News.query({
-			limit : 10
+		News.query({
+			limit : 15
+		}).$promise.then(function(res) {
+			// Trust le contenue des news et maj scope
+			res.forEach(function(item) {
+				item.content = $sce.trustAsHtml(item.content);
+			});
+			$scope.listNews = res;
 		});
 
 	}// END CONTROLLER
 	);
+
 })();

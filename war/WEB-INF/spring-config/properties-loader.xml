@@ -15,6 +15,7 @@ http://www.springframework.org/schema/jee/spring-jee.xsd">
 		<property name="locations">
 			<list>
 				<value>classpath*:/META-INF/config/*.properties</value>
+				<value>classpath*:/META-INF/${ENV}-config/*.properties</value>
 				<value>WEB-INF/config/*.properties</value>
 			</list>
 		</property>
