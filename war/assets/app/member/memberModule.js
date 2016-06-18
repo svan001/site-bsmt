@@ -4,7 +4,7 @@
 	// Declare module
 	var memberModule = angular.module('memberModule', [ 'ngResource', 'ngRoute', 'ngAnimate' ]);
 
-	// Resouce
+	// Resource
 	memberModule.factory('TeamMember', function($resource) {
 		return $resource('api/teamMember/:id', {
 			id : '@id'
@@ -17,7 +17,7 @@
 		$scope.teamMembers = TeamMember.query();
 
 		// Filter method : Leader => Membre/postulant => amis
-		$scope.statusFunctionFiler = function(item) {
+		$scope.statusFunctionFilter = function(item) {
 			if (item.status == 'L') {
 				return -1;
 			} else if (item.status == 'M' || item.status == 'P') {
