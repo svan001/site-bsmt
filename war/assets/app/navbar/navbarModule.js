@@ -4,6 +4,12 @@
 	// Declare module
 	var navbarModule = angular.module('navbarModule', []);
 
+	// Declaration du component
+	navbarModule.component('bsmtNavBar', {
+		controller : 'navbarCtrl',
+		templateUrl : 'app/navbar/navbar.html'
+	});
+	
 	// Controller
 	navbarModule.controller('navbarCtrl', function($scope, navbarService) {
 		// Navbar collapse

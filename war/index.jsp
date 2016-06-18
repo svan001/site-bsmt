@@ -64,8 +64,7 @@
 <body ng-app="bsmtApp">
 
 	<!-- header container -->
-	<div ng-include="'app/navbar/navbar.html'">
-	</div>
+	<bsmt-nav-bar></bsmt-nav-bar>
 	<!-- END header container -->
 
 	<!-- VIEW -->
