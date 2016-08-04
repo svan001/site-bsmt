@@ -2,7 +2,7 @@
  * ## TODO :
  * 
  * 1. __TITLE_NEWS__ : titre de la news
- * 2. __DATE_NEWS__ : '2016_MM_DD' date le news (danger du sysdate ! )
+ * 2. __DATE_NEWS__ : '2016-MM-DD' date le news (danger du sysdate ! )
  * 3. __IDG__ : ID de la gallery (last + 1)
  * 4. __TITLE_GALLERY__ : titre de la gallery
  * 5. __MAIN_PICTURE__ : photo présente en fin de news
