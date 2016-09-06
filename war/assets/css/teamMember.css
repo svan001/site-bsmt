@@ -39,6 +39,10 @@
 	margin-top: 20px;
 }
 
+.memberLinkImg:hover {
+    border: solid;
+}
+
 .memberDl {
 	vertical-align: middle;
 }
