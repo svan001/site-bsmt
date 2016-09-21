@@ -1,0 +1,26 @@
+<div>
+	<!-- Preview visuel -->
+	<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+		<a href="member/{{$ctrl.member.id}}"> <img
+			ng-src="api/gallery/1/picture/{{$ctrl.member.nickName}}?size=mini"
+			alt="Photo de {{$ctrl.member.nickName}}"
+			class="img-circle img-responsive memberLinkImg" />
+		</a>
+	</div>
+	<!-- Preview Text -->
+	<div class="col-lg-6 col-sm-6 col-md-6  col-xs-6">
+		<blockquote class="memberBlockquote">
+			<p class="text-capitalize"
+				ng-class="{
+					'postulantNickName' : $ctrl.member.status == 'P', 
+					'memberNickName' : $ctrl.member.status == 'M',
+					'leaderNickName' : $ctrl.member.status == 'L', 
+					'veteranNickName' : $ctrl.member.status == 'V' || $ctrl.member.status == 'A'
+					}">
+				{{$ctrl.member.nickName}}</p>
+			<small class="text-capitalize"><cite title="Role">{{$ctrl.member.role}}
+			</cite></small>
+		</blockquote>
+
+	</div>
+</div>

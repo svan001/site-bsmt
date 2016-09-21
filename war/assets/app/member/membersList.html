@@ -1,35 +1,15 @@
-<link href="css/teamMember.css?rev=06-09-2016" rel="stylesheet">
-
 <div class="teamMembersContainer">
 
 	<div class="row">
-		<h1>
-			Les membres de la BSMT
-		</h1>
+		<h1>Les membres de la BSMT</h1>
 	</div>
 
 	<div class="row">
-		<div ng-repeat="teamMember in teamMembers | orderBy:[statusFunctionFilter, 'nickName']"
-			class="col-lg-4 col-md-4 col-sm-6 col-xs-12 listColMember">
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-				<a href="member/{{teamMember.id}}"> <img
-					ng-src="api/gallery/1/picture/{{teamMember.nickName}}?size=mini"
-					
-					alt="Photo de {{teamMember.nickName}}"
-					class="img-circle img-responsive memberLinkImg" />
-				</a>
-			</div>
-
-			<div class="col-lg-6 col-sm-6 col-md-6  col-xs-6">
-				<blockquote class="memberBlockquote">
-					<p class="text-capitalize"
-						ng-class="{'postulantNickName' : teamMember.status == 'P', 'memberNickName' : teamMember.status == 'M', 'leaderNickName' : teamMember.status == 'L', 'veteranNickName' : teamMember.status == 'V' || teamMember.status == 'A'}">{{teamMember.nickName}}</p>
-					<small class="text-capitalize"><cite title="Role">{{teamMember.role}}
-					</cite></small>
-				</blockquote>
-
-			</div>
-
+		<div
+			ng-repeat="teamMember in teamMembers | orderBy:[statusFunctionFilter, 'nickName']"
+			class="col-lg-4 col-md-4 col-sm-6 col-xs-12 
+					listMemberPreview">
+			<member-preview member="teamMember" />
 		</div>
 
 	</div>

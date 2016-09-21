@@ -15,6 +15,7 @@
 <!-- CSS -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="css/main.css?v=3" rel="stylesheet">
+<link href="css/teamMember.css?rev=21-09-2016" rel="stylesheet">
 
 <%if("DEV".equals(System.getProperty("ENV"))) {%>
 
@@ -54,9 +55,13 @@
 <script src="app/navbar/navbarModule.js"></script>
 <script src="app/home/homeModule.js"></script>
 <script src="app/news/newsModule.js"></script>
+
 <script src="app/member/memberModule.js"></script>
+<script src="app/member/component/preview/memberPreview.js"></script>
+
 <script src="app/recrutement/recrutementModule.js"></script>
 <script src="app/gallery/galleryModule.js"></script>
+
 <script src="app/app.js"></script>
 <!-- >>> Script app angular -->  
 
