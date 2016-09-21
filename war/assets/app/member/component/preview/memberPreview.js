@@ -9,7 +9,7 @@
 	module.component('memberPreview', {
 		templateUrl : 'app/member/component/preview/memberPreview.html',
 		bindings : {
-			member : '='
+			member : '<'
 		}
 	});
 
