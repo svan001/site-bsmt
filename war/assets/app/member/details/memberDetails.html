@@ -1,0 +1,55 @@
+<link href="css/teamMember.css" rel="stylesheet">
+
+<div class="teamMemberDetailContainer">
+
+	<div class="row">
+		<h2 class="text-capitalize"
+			ng-class="{'postulantNickName' : teamMember.status == 'P', 'memberNickName' : teamMember.status == 'M', 'leaderNickName' : teamMember.status == 'L', 'veteranNickName' : teamMember.status == 'V' || teamMember.status == 'A'}">
+
+			<a href="member" class="btn btn-link"> <span
+				class="retourButton glyphicon glyphicon glyphicon-circle-arrow-left"
+				aria-hidden="true"></span>
+			</a> {{teamMember.nickName}} <span ng-if="teamMember.departureDate !== null">(Depart
+				le {{teamMember.departureDate | date:'dd/MM/yyyy'}})</span>
+		</h2>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-6 col-sm-6 col-md-6  col-xs-6 memberDl">
+			<dl class="dl-horizontal memberDl">
+				<dt>Status</dt>
+				<div ng-switch on="teamMember.status">
+					<dd ng-switch-when="M">Membre</dd>
+					<dd ng-switch-when="L">Leader</dd>
+					<dd ng-switch-when="P">Postulant</dd>
+					<dd ng-switch-when="V">Veteran</dd>
+					<dd ng-switch-when="A">Amis de la team</dd>
+				</div>
+
+				<dt>Prenom</dt>
+				<dd>{{teamMember.forname}}</dd>
+				<dt>Sexe</dt>
+				<dd>{{teamMember.sexe}}</dd>
+				<dt>Date de naissance</dt>
+				<dd>{{teamMember.birthDate | date:'dd/MM/yyyy'}}</dd>
+				<dt>Role</dt>
+				<dd>{{teamMember.role}}</dd>
+				<dt>Arrive dans la team</dt>
+				<dd>{{teamMember.membershipDate | date:'dd/MM/yyyy'}}</dd>
+				<dt>Equipement</dt>
+				<dd>{{teamMember.gear}}</dd>
+				<dt>Aime</dt>
+				<dd>{{teamMember.likes}}</dd>
+				<dt>N'aime pas</dt>
+				<dd>{{teamMember.doesntlikes}}</dd>
+				<dt>Description</dt>
+				<dd>{{teamMember.description}}</dd>
+			</dl>
+		</div>
+		<div class="col-lg-6 col-sm-6 col-md-6  col-xs-6">
+			<img ng-src="api/gallery/1/picture/{{teamMember.nickName}}"
+				alt="Photo de {{teamMember.nickName}}"
+				class="img-rounded img-responsive" />
+		</div>
+	</div>
+</div>

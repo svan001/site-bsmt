@@ -1,0 +1,16 @@
+<div class="teamMembersContainer">
+
+	<div class="row">
+		<h1>Les membres de la BSMT</h1>
+	</div>
+
+	<div class="row">
+		<div
+			ng-repeat="teamMember in teamMembers | orderBy:[statusFunctionFilter, 'nickName']"
+			class="col-lg-4 col-md-4 col-sm-6 col-xs-12 
+					listMemberPreview">
+			<member-preview member="teamMember" />
+		</div>
+
+	</div>
+</div>

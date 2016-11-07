@@ -56,7 +56,9 @@
 <script src="app/home/homeModule.js"></script>
 <script src="app/news/newsModule.js"></script>
 
-<script src="app/member/memberModule.js"></script>
+<script src="app/member/member.js"></script>
+<script src="app/member/main/memberMainCtrl.js"></script>
+<script src="app/member/details/memberDetailsCtrl.js"></script>
 <script src="app/member/component/preview/memberPreview.js"></script>
 
 <script src="app/recrutement/recrutementModule.js"></script>

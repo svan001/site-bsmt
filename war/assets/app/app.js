@@ -20,11 +20,11 @@
 			templateUrl : 'app/news/newsList.html',
 			controller : 'newsCtrl'
 		}).when('/member', {
-			templateUrl : 'app/member/membersList.html',
-			controller : 'memberCtrl'
+			templateUrl : 'app/member/main/memberMain.html',
+			controller : 'memberMainCtrl'
 		}).when('/member/:idMember', {
-			templateUrl : 'app/member/memberDetail.html',
-			controller : 'memberDetailCtrl'
+			templateUrl : 'app/member/details/memberDetails.html',
+			controller : 'memberDetailsCtrl'
 		}).when('/recrutement', {
 			templateUrl : 'app/recrutement/recrutement.html',
 			controller : 'recrutementCtrl'
