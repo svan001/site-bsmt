@@ -29,10 +29,10 @@
 			templateUrl : 'app/recrutement/recrutement.html',
 			controller : 'recrutementCtrl'
 		}).when('/gallery', {
-			templateUrl : 'app/gallery/galleryList.html',
-			controller : 'galleryCtrl'
+			templateUrl : 'app/gallery/main/galleryMain.html',
+			controller : 'galleryMainCtrl'
 		}).when('/gallery/:idGallery', {
-			templateUrl : 'app/gallery/showGallery.html',
+			templateUrl : 'app/gallery/show/showGallery.html',
 			controller : 'showGalleryCtrl'
 		}).otherwise({
 			redirectTo : '/home'
