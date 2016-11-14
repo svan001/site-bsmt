@@ -1,7 +1,7 @@
 (function() {
 	"use strict";
 
-	var module = angular.module('memberModule');
+	var module = angular.module('member');
 
 	/**
 	 * Component de preview d'un member

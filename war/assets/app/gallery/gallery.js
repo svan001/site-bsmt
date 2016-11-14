@@ -2,7 +2,7 @@
 
     'use strict';
 
-    var galleryModule = angular.module('galleryModule', ['ngResource']);
+    var galleryModule = angular.module('gallery', ['ngResource']);
 
     // *******************************************
     // Resource Gallery

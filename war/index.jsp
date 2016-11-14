@@ -52,16 +52,16 @@
  
   
 <!-- <<< Script app angular -->  
-<script src="app/navbar/navbarModule.js"></script>
-<script src="app/home/homeModule.js"></script>
-<script src="app/news/newsModule.js"></script>
+<script src="app/navbar/navbar.js"></script>
+<script src="app/home/home.js"></script>
+<script src="app/news/news.js"></script>
 
 <script src="app/member/member.js"></script>
 <script src="app/member/component/preview/memberPreview.js"></script>
 <script src="app/member/main/memberMainCtrl.js"></script>
 <script src="app/member/details/memberDetailsCtrl.js"></script>
 
-<script src="app/recrutement/recrutementModule.js"></script>
+<script src="app/recrutement/recrutement.js"></script>
 
 <script src="app/gallery/gallery.js"></script>
 <script src="app/gallery/main/galleryMainCtrl.js"></script>

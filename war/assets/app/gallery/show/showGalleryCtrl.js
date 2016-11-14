@@ -2,7 +2,7 @@
 
     'use strict';
 
-    var galleryModule = angular.module('galleryModule');
+    var galleryModule = angular.module('gallery');
 
     // *******************************************
     // Controller Show gallery

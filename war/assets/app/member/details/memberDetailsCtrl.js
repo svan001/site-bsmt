@@ -2,7 +2,7 @@
 	'use strict';
 
 	// Declare module
-	var memberModule = angular.module('memberModule');
+	var memberModule = angular.module('member');
 
 	// Controller detail
 	memberModule.controller('memberDetailsCtrl', function($scope, $resource, $routeParams, TeamMember) {

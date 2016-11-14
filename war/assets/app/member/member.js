@@ -2,7 +2,7 @@
     'use strict';
 
     // Declare module
-    var memberModule = angular.module('memberModule', ['ngResource', 'ngRoute', 'ngAnimate']);
+    var memberModule = angular.module('member', ['ngResource', 'ngRoute', 'ngAnimate']);
 
     // Resource
     memberModule.factory('TeamMember', function ($resource) {

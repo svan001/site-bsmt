@@ -8,7 +8,7 @@
 	// lib
 	'ui.bootstrap',
 	// App
-	'navbarModule', 'homeModule', 'newsModule', 'memberModule', 'recrutementModule', 'galleryModule' ]);
+	'navbar', 'home', 'news', 'member', 'recrutement', 'gallery' ]);
 
 	// CONFIG ROUTE
 	bsmtApp.config(function($routeProvider, $locationProvider) {

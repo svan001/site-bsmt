@@ -2,7 +2,7 @@
 	'use strict';
 
 	// Declare module
-	var navbarModule = angular.module('navbarModule', []);
+	var navbarModule = angular.module('navbar', []);
 
 	// Declaration du component
 	navbarModule.component('bsmtNavBar', {

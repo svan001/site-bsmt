@@ -2,7 +2,7 @@
 	'use strict';
 
 	// Declare module
-	var module = angular.module('newsModule', [ 'ngResource', 'ngSanitize' ]);
+	var module = angular.module('news', [ 'ngResource', 'ngSanitize' ]);
 
 	// Service/resource
 	module.factory('News', function($resource) {
