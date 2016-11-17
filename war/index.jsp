@@ -27,8 +27,7 @@
 <script src="angular/angular-sanitize.js"></script>
 <script src="angular/angular-touch.js"></script>
 
-<script src="angular/i18n/angular-locale_fr-fr.js"></script>
-<!-- >>> AngularJS -->  
+<!-- >>> AngularJS -->
 
 <%} else { %>
 
@@ -42,9 +41,15 @@
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-sanitize.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-touch.min.js"></script>
 
+<!-- #23 Chargement SSL beaucoup trop long bascule sur le fichier "local" systematiquement
 <script src="//code.angularjs.org/1.5.0/i18n/angular-locale_fr-fr.js"></script>
+-->
 <!-- >>> AngularJS -->  
 <%} %>
+
+<!-- #23 Chargement SSL beaucoup trop long bascule sur le fichier "local" systematiquement-->
+<script src="angular/i18n/angular-locale_fr-fr.js"></script>
+
 <!-- CDN ??
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.1/ui-bootstrap-tpls.min.js"></script>
  --> 
