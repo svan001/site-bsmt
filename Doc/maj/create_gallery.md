@@ -2,7 +2,7 @@
 
 ### Création image
 
-#### Convert :
+#### Convert (via imagemagick) :
 
 Ex: `convert MY_IMG.jpg -resize 165x165 MY_IMG.jpg` 
 
