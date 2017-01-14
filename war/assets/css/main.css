@@ -62,3 +62,211 @@ footer {
 .slide.ng-leave-active {
 	left: 200%;
 }
+
+.retourButton {
+	font-size: 30px;
+}
+
+/* ******************************************************************************
+ * HEADER
+ * ******************************************************************************/
+
+/* TOP CONTAINER*/
+.top-container {
+	margin-top: 10px;
+}
+/*Img de la banniere*/
+.img-banniere {
+	max-height: 250px;
+}
+/*Colonne d'une row de la banniere*/
+.col-banniere {
+	padding: 2px;
+}
+/*class de la case recrutement*/
+.navbar-inverse .navbar-nav>li.recrutement-li>a {
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+	/* KO SUR CHROME... text-decoration-color : #;*/
+}
+
+/*row de la navbar*/
+.navbar-row {
+	margin-top: 5px;
+	font-size: 16px;
+}
+/* END TOP CONTAINER*/
+
+/* ******************************************************************************
+ * GALLERY
+ * ******************************************************************************/
+
+.galleryContainer {
+	background-color: rgb(13, 13, 13);
+
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+
+.showGalleryContainer {
+	position: relative;
+	padding-top: 0px;
+}
+
+.vignette-gallery h4{
+	height: 2em;
+}
+
+/*GALLERIE MODAL*/
+.galleryModal {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1040;
+	overflow-y: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.galleryModal-dialog {
+	margin-top: 150px;
+}
+
+.galleryModal-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Animation*/
+.galleryModal.ng-hide-remove {
+	-webkit-transition: 0.4s linear all;
+	-moz-transition: 0.4s linear all;
+	-o-transition: 0.4s linear all;
+	transition: 0.4s linear all;
+}
+
+.galleryModal.ng-hide-remove {
+	opacity: 0;
+	overflow: hidden;
+	height: 0px;
+}
+
+.galleryModal.ng-hide-remove.ng-hide-remove-active {
+	opacity: 1;
+	height: 100%;
+}
+
+/* ******************************************************************************
+ * NEWS
+ * ******************************************************************************/
+
+.news-container{
+    background-color: rgb(13,13,13);
+}
+
+.newsTitle {
+    color: rgb(161, 161, 161);
+    font-size: large;
+    font-weight : bold;
+
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: 1px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.newsContent {
+    color: #5e5e5e;
+    font-size: 16px;
+}
+
+.newsAuthor {
+    color: rgb(161, 161, 161);
+    text-align: right;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ******************************************************************************
+ * TEAM MEMBER
+ * ******************************************************************************/
+
+/*Container*/
+.teamMembersContainer {
+    background-color: rgb(13, 13, 13);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.teamMemberDetailContainer {
+    background-color: rgb(13, 13, 13);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+/*BEGIN Couleur des pseudos*/
+.leaderNickName {
+    color: #1109F0;
+}
+.memberNickName {
+    color: #F50C0C;
+}
+.postulantNickName {
+    color: #21EBEB;
+}
+.veteranNickName {
+    color: #25CC2A;
+}
+/*END Couleur des pseudos*/
+
+.profilName {
+    color: rgb(161, 161, 161);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.listMemberPreview {
+    margin-top: 20px;
+}
+
+.memberLinkImg:hover {
+    border: solid;
+}
+
+.memberDl {
+    vertical-align: middle;
+}
+
+.memberBlockquote{
+    margin-bottom: 0px
+}
+
+/*ANIMATIONS*/
+.listMemberPreview.ng-enter {
+    -webkit-transition: 0.8s linear all;
+    -moz-transition: 0.8s linear all;
+    -o-transition: 0.8s linear all;
+    transition: 0.8s linear all;
+}
+
+.listMemberPreview.ng-enter {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.listMemberPreview.ng-enter.ng-enter-active {
+    opacity: 1;
+    height: 120px;
+}

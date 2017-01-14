@@ -7,15 +7,16 @@
 <meta name="description" content="Site officiel de la Black Shark Milsim Team">
 <meta name="author" content="svan">
 <meta name="keywords" content="bsmt, milsim, paintball, black shark milsim team">
+
 <link rel="icon" href="img/favicon.png">
 
 <base href="/site/">
+
 <title>Black Shark Milsim Team</title>
 
 <!-- CSS -->
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="css/main.css?v=3" rel="stylesheet">
-<link href="css/teamMember.css?rev=21-09-2016" rel="stylesheet">
+<link href="css/main.css?rev=14-01-2016" rel="stylesheet">
 
 <%if("DEV".equals(System.getProperty("ENV"))) {%>
 
