@@ -1,143 +1,65 @@
 /**
- * 
+ *
  */
 package com.svan.veille.site.bsmt.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "gallery")
 public class Gallery {
 
-	// ------------ PK -----------------------------------------------------//
+    // ------------ PK -----------------------------------------------------//
 
-	@Id
-	@Column(name = "id")
-	@GeneratedValue
-	private Long id;
+    @Id
+    @Column(name = "id")
+    @GeneratedValue
+    private Long id;
 
-	@Column(name = "title", nullable = false, length = 255)
-	private String title;
+    @Column(name = "title", nullable = false, length = 255)
+    private String title;
 
-	@Column(name = "description", nullable = false, length = 3000)
-	private String description;
+    @Column(name = "description", nullable = false, length = 3000)
+    private String description;
 
-	@Column(name = "source", length = 255)
-	private String source;
+    @Column(name = "source", length = 255)
+    private String source;
 
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "gallery")
-	private List<Picture> pictures;
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "gallery")
+    private List<Picture> pictures;
 
-	// ------------ Creation/update -----------------------------------------//
+    // ------------ Creation/update -----------------------------------------//
 
-	@Column(name = "creation_date", nullable = false)
-	@Temporal(TemporalType.TIMESTAMP)
-	private Calendar creationDate;
+    @Column(name = "creation_date", nullable = false)
+    @Temporal(TemporalType.TIMESTAMP)
+    private Calendar creationDate;
 
-	@Column(name = "update_date")
-	@Temporal(TemporalType.TIMESTAMP)
-	private Calendar updateDate;
+    @Column(name = "update_date")
+    @Temporal(TemporalType.TIMESTAMP)
+    private Calendar updateDate;
 
-	@PrePersist
-	private void prePersist() {
-		creationDate = GregorianCalendar.getInstance();
-	}
+    @PrePersist
+    private void prePersist() {
+        creationDate = GregorianCalendar.getInstance();
+    }
 
-	@PreUpdate
-	private void preUpdate() {
-		updateDate = GregorianCalendar.getInstance();
-	}
+    @PreUpdate
+    private void preUpdate() {
+        updateDate = GregorianCalendar.getInstance();
+    }
 
-	// ------------ Getter/setter -------------------------------------------//
-
-	/**
-	 * @return the id
-	 */
-	public Long getId() {
-		return id;
-	}
-
-	/**
-	 * @param id
-	 *            the id to set
-	 */
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	/**
-	 * @return the title
-	 */
-	public String getTitle() {
-		return title;
-	}
-
-	/**
-	 * @param title
-	 *            the title to set
-	 */
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	/**
-	 * @return the creationDate
-	 */
-	public Calendar getCreationDate() {
-		return creationDate;
-	}
-
-	/**
-	 * @return the updateDate
-	 */
-	public Calendar getUpdateDate() {
-		return updateDate;
-	}
-
-	/**
-	 * @return the pictures
-	 */
-	public List<Picture> getPictures() {
-		return pictures;
-	}
-
-	/**
-	 * @param pictures
-	 *            the pictures to set
-	 */
-	public void setPictures(List<Picture> pictures) {
-		this.pictures = pictures;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public String getSource() {
-		return source;
-	}
-
-	public void setSource(String source) {
-		this.source = source;
-	}
+    // ------------ Getter/setter -------------------------------------------//
 
 }
