@@ -19,12 +19,12 @@ Projet du site la BSMT
 
 #### Init de la Base
 
-*(pre migration flyway)*
+* Démarrer l'appli, si déjà une bdd init de la table `schema_version` via l'executable (apres edit du fichier de config) :  `./flyway baseline -Dflyway.baselineVersion=1_0_0 -Dflyway.baselineDescription="Init migration flyway"`
+
+(Sinon pre migration flyway)*
 * Utiliser un dump de la bdd de prod  
 * Commande (remplacer le MDP) : `mysqldump -ubootstrap -pMDP_PROD bootstrap > /tmp/export.sql`
 
-*(post migration flyway)*
-* Démarrer l'appli, si déjà une bdd init de la table `schema_version` via l'executable (apres edit du fichier de config) :  `./flyway baseline -Dflyway.baselineVersion=1_0_0 -Dflyway.baselineDescription="Init migration flyway"`
 
 
 #### Ajouter ressource à tomcat
@@ -57,6 +57,6 @@ Projet du site la BSMT
 
 * Var d'env pour selectionner le fichier de log : -Dlog4j.configuration="./log4jDEV.xml"
 * Var d'env pour selectionner le dossier avec les images : -DIMG_DIR="" 
-	*  Pointer vers le dossier du repo : -DIMG_DIR="/home/stephane/DEV/repositories/site-bsmt/install"
+	*  Pointer vers le dossier du repo : -DIMG_DIR="/home/stephane/DEV/git/site-bsmt/install"
 * Var d'env pour etre en DEV (minification ...) : -DENV="DEV" 	
 	 		
