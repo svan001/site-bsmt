@@ -1,7 +1,33 @@
-# Site BSMT
+# ARCHIVE Site BSMT
 
-Projet du site la BSMT
+**Francais :**
 
+Archive du Projet du site Web de la BSMT (Black Shark Milsim Team), équipe de paintball du nord de la France.
+
+Ceci était un de mes projets perso ayant pour but de promouvoir l'équipe en me permettant d'expérimenter certaines idées et/ou technologies.
+
+Le site n'est plus maintenu et plus visible sur le web, les sources reste ici pour archive. 
+
+C'est une application java web, Front angularJs, Back Spring avec une base MariaDB, qui permet d'exposer de facon basique photos, news, présentation, ....
+L'approche la plus simple possible est priviligiée. 
+Le site étant supposé rester privé à l'origne, tout n'est pas forcément concus pour un quelqu'un externe, désolé, il n'est pas prévus de revenir dessus.
+
+
+**English**
+
+Archive for the website of the BSMT (Black Shark Milsim Team), French paintball team.
+
+It was one of my pet project that I used to promote our team and play with different idea and/or technologie at that time.
+
+It's not under current development anymore, nor it is visible on the web, source code is here to be shared and be available.
+
+Most of the comment or concept are in French, it may be a little bit tricky to understand if you don't speak french at all.
+
+It's a web application, Front angularJs, Back Spring + MariaDB, which allow to display simple news, photo galleries, presentation of team member, ...
+The simplest solutions are preferred throughout the application over maybe better but more complicated solutions.
+As the source code was supposed to stay private, everything may not be obvious for someone not familiar with the project and its history, sorry about that but it well may never change.
+
+# OLD README
 
 ## Tuto/proc d'install
 
